@@ -43,12 +43,47 @@ newsletter, each with its own on/off switch in the Theme Editor.
 
 ### Under the hood
 
-- Full Page Builder and Theme Editor integration — 367 settings across 9 sections
+- Full Page Builder and Theme Editor integration — 380 settings across 9 sections
 - Lazy loading with low-quality image placeholders, so images resolve in rather than jump
 - Responsive from phone to desktop, with the desktop layout starting at 1261px
 - Accessibility: ARIA attributes throughout, focus trapping in overlays, keyboard
   navigation, named landmarks, and a single main landmark per page
 - 20 storefront locales covering 13 distinct translations
+
+### Phones and tablets
+
+- Every page reworked for phones, tablets and phone landscape, in both colour modes, and
+  readable at up to 200% text size
+- Add to Cart opens the cart as a sheet over the page instead of leaving the product
+- A per-slide **Hero Focus (phones & tablets)** setting keeps each hero photograph's
+  subject in view when the picture is cropped — see
+  [Hero focus](usage/theme-editor.md#hero-focus-on-phones-and-tablets)
+- One button system per layout preset, with the hover and pressed shades mixed from the
+  **Button** colour
+
+### Cart
+
+- The cart page, the cart sheet and the product page say how much more qualifies for free
+  shipping, in the shopper's currency
+- The cart page's cross-sell row leaves out products already in the cart
+- A promotion that splits a discounted unit onto its own line shows as one product, and
+  minimum and maximum purchase quantities count across both lines
+
+### Prices hidden from guests
+
+When the store hides prices from guests, no price reaches the page: not on product cards,
+bulk pricing tables, the product page's fixed shipping cost, the free-shipping bar, or the
+structured data search engines read. See
+[Prices hidden from guests](usage/theme-editor.md#prices-hidden-from-guests) for what that
+means for Google rich results.
+
+### Upgrading from a pre-release build
+
+- **Fonts:** pick your body and heading fonts again so every weight loads — see
+  [Typography](usage/theme-editor.md#typography).
+- **Primary button colour:** `#1B1D21`, `#333333` and `#000000` in the Cornerstone primary
+  button controls read as "not set" — see
+  [Primary button colour](usage/theme-editor.md#primary-button-colour).
 
 ### What the theme does not do
 
