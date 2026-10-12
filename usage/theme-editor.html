@@ -701,6 +701,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-button-colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary button colour
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -756,6 +773,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Homepage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hero-focus-on-phones-and-tablets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hero focus on phones and tablets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -774,6 +808,17 @@
     <span class="md-ellipsis">
       
         Cart
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prices-hidden-from-guests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prices hidden from guests
       
     </span>
   </a>
@@ -1034,6 +1079,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-button-colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary button colour
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1089,6 +1151,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Homepage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hero-focus-on-phones-and-tablets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hero focus on phones and tablets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1107,6 +1186,17 @@
     <span class="md-ellipsis">
       
         Cart
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prices-hidden-from-guests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prices hidden from guests
       
     </span>
   </a>
@@ -1190,9 +1280,56 @@ need to restyle pieces individually.</p>
 </tr>
 </tbody>
 </table>
+<p>Two more sit beside them: <strong>Accent text</strong>, the accent as used for text (often a shade
+darker than the accent itself, so it stays readable on white), and <strong>Button</strong>, the fill of
+the primary buttons.</p>
+<p><strong>Dark Mode Colors</strong> repeats the same set for dark mode. Dark mode reads only these, so a
+colour changed under <strong>Colors</strong> does not carry over to it.</p>
 <p>Each variation ships a palette that meets WCAG AA contrast in both light and dark mode. If
 you change these values, check the result in both modes — a colour that reads well on white
 often fails on the dark surface.</p>
+<h3 id="primary-button-colour">Primary button colour<a class="headerlink" href="#primary-button-colour" title="Permanent link">&para;</a></h3>
+<p>Primary buttons — Add to Cart, Checkout, Sign In, Apply — take their fill from
+<strong>Yen Theme → Button</strong> in light mode and <strong>Dark Mode Colors → Button</strong> in dark mode. Hover
+and pressed shades are mixed from it, so one colour is all you set.</p>
+<p>The standard Cornerstone controls under <strong>Buttons and icons → Primary action button</strong> still
+work, in light mode, and take over once you change them:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Counts as "not set" at</th>
+<th>When you change it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Button background</strong></td>
+<td><code>#1B1D21</code></td>
+<td>Replaces the Button colour; hover and pressed shades are mixed from it</td>
+</tr>
+<tr>
+<td><strong>Button background hover</strong></td>
+<td><code>#333333</code></td>
+<td>Replaces the mixed hover shade</td>
+</tr>
+<tr>
+<td><strong>Button background active</strong></td>
+<td><code>#000000</code></td>
+<td>Replaces the mixed pressed shade</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Three values mean “use the theme’s colour”</p>
+<p>Those three values are what the theme ships with, and a control left at its shipped
+value is treated as untouched — so the theme's own Button colour paints the buttons.
+That means choosing <em>exactly</em> <code>#1B1D21</code> for the background, <code>#333333</code> for hover or
+<code>#000000</code> for pressed changes nothing. If one of those is the colour you want, pick
+one a step away, such as <code>#1B1D22</code> or <code>#010101</code>; nobody can see the difference.
+<strong>Button text color</strong> has no such rule and always applies. None of the Cornerstone
+button controls has a dark-mode twin: in dark mode, use <strong>Dark Mode Colors → Button</strong>.</p>
+</div>
 <h2 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1233,9 +1370,51 @@ often fails on the dark surface.</p>
 <p>Border Radius applies globally — buttons, cards, inputs, images. <code>0px</code> gives a hard-edged
 look; <code>20px</code> is soft and rounded.</p>
 <h2 id="typography">Typography<a class="headerlink" href="#typography" title="Permanent link">&para;</a></h2>
-<p>Yen Theme uses <strong>Plus Jakarta Sans</strong> by default: weight 400 for body copy, 700 for
-headings. Change fonts under the standard Stencil <strong>Typography</strong> controls; the theme's
-heading scale (48 / 32 / 22 / 18 / 16 / 14 px) adapts to whichever family you pick.</p>
+<p>Fonts are chosen with the standard Cornerstone controls: <strong>Global → Body text and links →
+Body text font family</strong> and <strong>Global → Headings → Heading font family</strong>. The theme's
+heading scale adapts to whichever family you pick.</p>
+<p>Each variation ships a pair:</p>
+<table>
+<thead>
+<tr>
+<th>Variation</th>
+<th>Body text</th>
+<th>Headings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Home</strong></td>
+<td>Plus Jakarta Sans</td>
+<td>Plus Jakarta Sans, at weights 700 and 800</td>
+</tr>
+<tr>
+<td><strong>Fashion</strong></td>
+<td>Jost</td>
+<td>Playfair Display</td>
+</tr>
+<tr>
+<td><strong>Food</strong></td>
+<td>DM Sans</td>
+<td>Fraunces</td>
+</tr>
+</tbody>
+</table>
+<p>Each font offered by those two controls loads every weight the theme draws it at — for body
+text, regular through extra-bold plus italic — so bold text comes from the real bold cut
+instead of being thickened by the browser. (The checkout's own font controls are separate
+and unchanged.)</p>
+<div class="admonition warning">
+<p class="admonition-title">Upgrading from an earlier build? Pick your fonts again</p>
+<p>Earlier builds saved a font with a single weight, for example
+<code>Google_Plus+Jakarta+Sans_400</code>. A saved setting is kept when you upgrade, so a store
+that still has one of those loads that one weight only, and every bold heading, price
+and button label is faked by the browser. Open both font controls, select your font
+again and save; the setting is rewritten with every weight, for example
+<code>Google_Plus+Jakarta+Sans_400,500,600,700,800,400italic</code>. If the dropdown already
+shows your font, pick a different one first and then yours, so the editor registers a
+change.</p>
+</div>
 <h2 id="announcement-bar">Announcement bar<a class="headerlink" href="#announcement-bar" title="Permanent link">&para;</a></h2>
 <p>Up to three rotating messages across the top of every page. Leave a message empty to skip
 it; leave all three empty to hide the bar.</p>
@@ -1282,6 +1461,46 @@ All Categories panel.</p>
 </tr>
 </tbody>
 </table>
+<h3 id="hero-focus-on-phones-and-tablets">Hero focus on phones and tablets<a class="headerlink" href="#hero-focus-on-phones-and-tablets" title="Permanent link">&para;</a></h3>
+<p>The hero photographs are wide, and below 1100px the hero box is much narrower than the
+picture, so the photo is cropped to fill it. <strong>Hero 1 Focus</strong>, <strong>Hero 2 Focus</strong> and
+<strong>Hero 3 Focus (phones &amp; tablets)</strong>, one per slide, choose which part of the width stays
+in view: <code>0% (left)</code> keeps the left edge, <code>50% (centre)</code> crops evenly from both sides,
+<code>100% (right)</code> keeps the right edge, in steps of 10%. Set each one to where the subject of
+that slide stands. Desktop always shows the centred crop.</p>
+<table>
+<thead>
+<tr>
+<th>Variation</th>
+<th>Hero 1</th>
+<th>Hero 2</th>
+<th>Hero 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Home</strong></td>
+<td>50%</td>
+<td>50%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td><strong>Fashion</strong></td>
+<td>80%</td>
+<td>90%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td><strong>Food</strong></td>
+<td>70%</td>
+<td>80%</td>
+<td>80%</td>
+</tr>
+</tbody>
+</table>
+<p>These are the values each variation ships with, chosen for its own photographs. A slide
+replaced through Page Builder (see <a href="page-builder.html#replacing-the-homepage-hero">Replacing the homepage hero</a>)
+is your own widget, and its focus setting does not apply to it.</p>
 <h2 id="product-pages">Product pages<a class="headerlink" href="#product-pages" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1298,6 +1517,10 @@ All Categories panel.</p>
 <tr>
 <td><strong>Q&amp;A Tab</strong></td>
 <td>Adds a questions tab to the product tabs</td>
+</tr>
+<tr>
+<td><strong>Compare button outside category and brand pages</strong></td>
+<td>Shows the compare button on product cards. Turned off, no card shows it, category and brand pages included; turned on, those two pages also need BigCommerce's own product comparison setting</td>
 </tr>
 </tbody>
 </table>
@@ -1334,6 +1557,30 @@ All Categories panel.</p>
 </table>
 <p>Set the <strong>Free Shipping</strong> threshold to match the free-shipping rule you configured in
 <strong>Settings → Shipping</strong>. The theme does not read your shipping rules; it only draws the bar.</p>
+<p>Below the threshold, the cart page, the cart sheet that opens after Add to Cart, and the
+product page all say how much is still missing — "Add $12.00 more for free shipping" —
+in the shopper's currency. Once the cart reaches it, the shipping row reads <strong>FREE</strong>.</p>
+<p>The cross-sell row on the cart page leaves out products that are already in the cart. If
+that leaves fewer products than the row holds, it shows the ones that remain.</p>
+<h2 id="prices-hidden-from-guests">Prices hidden from guests<a class="headerlink" href="#prices-hidden-from-guests" title="Permanent link">&para;</a></h2>
+<p>BigCommerce can hide prices from shoppers who are not signed in. That is a store setting,
+not a theme one, and the theme follows it everywhere it prints a price. For a guest on such
+a store, Yen shows no price on:</p>
+<ul>
+<li>product cards, wherever they appear</li>
+<li>the product page, its bulk pricing table and its fixed shipping cost</li>
+<li>the free-shipping progress bar in the cart (the threshold sentence stays, the bar and the
+  amount still missing do not)</li>
+<li>the structured data (JSON-LD) search engines read from the product page</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">What this means for search results</p>
+<p>The theme leaves the whole <code>offers</code> block out of the structured data for guests, since
+an offer without a price is an error in Google's Rich Results test. Search engines crawl
+as guests, so Google has no price or availability to show in a rich result for your
+products. That is the trade-off of hiding prices from guests. Signed-in shoppers see
+every price as usual.</p>
+</div>
 
 
 
