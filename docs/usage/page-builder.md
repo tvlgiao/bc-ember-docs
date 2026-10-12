@@ -10,6 +10,11 @@ and `home_hero_slide_3`. Dropping a widget into one **replaces** that slide's bu
 content entirely, which is how you use a custom hero without editing theme files. Leave a
 region empty and the theme renders its own slide.
 
+The hero slots are used only when the store has no Storefront → Carousel slides, or when
+Theme Editor → Yen Theme → Homepage → *Hero: Storefront > Carousel slides* is off. While that
+setting is on and Control Panel carousel slides exist, the hero is built from those slides
+instead.
+
 ## All regions
 
 | Page | Regions |

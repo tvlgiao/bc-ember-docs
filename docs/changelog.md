@@ -17,6 +17,8 @@ Three, with the same features. Each has its own layout preset (Theme Editor → 
 
 ### Shopping experience
 
+- Home hero shows your Storefront → Carousel slides when you add them, in the theme's own
+  hero design; without slides it shows the theme's three built-in slides
 - Dark/light mode toggle, with both modes designed rather than inverted
 - Mega navigation with featured images and multi-column layouts
 - Product cards with quick view, wishlist, compare and hover detail
