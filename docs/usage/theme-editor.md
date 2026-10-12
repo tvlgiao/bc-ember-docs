@@ -30,9 +30,40 @@ need to restyle pieces individually.
 | **Text** | Body copy |
 | **Muted** | Secondary copy, captions, metadata |
 
+Two more sit beside them: **Accent text**, the accent as used for text (often a shade
+darker than the accent itself, so it stays readable on white), and **Button**, the fill of
+the primary buttons.
+
+**Dark Mode Colors** repeats the same set for dark mode. Dark mode reads only these, so a
+colour changed under **Colors** does not carry over to it.
+
 Each variation ships a palette that meets WCAG AA contrast in both light and dark mode. If
 you change these values, check the result in both modes — a colour that reads well on white
 often fails on the dark surface.
+
+### Primary button colour
+
+Primary buttons — Add to Cart, Checkout, Sign In, Apply — take their fill from
+**Yen Theme → Button** in light mode and **Dark Mode Colors → Button** in dark mode. Hover
+and pressed shades are mixed from it, so one colour is all you set.
+
+The standard Cornerstone controls under **Buttons and icons → Primary action button** still
+work, in light mode, and take over once you change them:
+
+| Setting | Counts as "not set" at | When you change it |
+| --- | --- | --- |
+| **Button background** | `#1B1D21` | Replaces the Button colour; hover and pressed shades are mixed from it |
+| **Button background hover** | `#333333` | Replaces the mixed hover shade |
+| **Button background active** | `#000000` | Replaces the mixed pressed shade |
+
+!!! note "Three values mean “use the theme’s colour”"
+    Those three values are what the theme ships with, and a control left at its shipped
+    value is treated as untouched — so the theme's own Button colour paints the buttons.
+    That means choosing *exactly* `#1B1D21` for the background, `#333333` for hover or
+    `#000000` for pressed changes nothing. If one of those is the colour you want, pick
+    one a step away, such as `#1B1D22` or `#010101`; nobody can see the difference.
+    **Button text color** has no such rule and always applies. None of the Cornerstone
+    button controls has a dark-mode twin: in dark mode, use **Dark Mode Colors → Button**.
 
 ## Layout
 
@@ -49,9 +80,32 @@ look; `20px` is soft and rounded.
 
 ## Typography
 
-Yen Theme uses **Plus Jakarta Sans** by default: weight 400 for body copy, 700 for
-headings. Change fonts under the standard Stencil **Typography** controls; the theme's
-heading scale (48 / 32 / 22 / 18 / 16 / 14 px) adapts to whichever family you pick.
+Fonts are chosen with the standard Cornerstone controls: **Global → Body text and links →
+Body text font family** and **Global → Headings → Heading font family**. The theme's
+heading scale adapts to whichever family you pick.
+
+Each variation ships a pair:
+
+| Variation | Body text | Headings |
+| --- | --- | --- |
+| **Home** | Plus Jakarta Sans | Plus Jakarta Sans, at weights 700 and 800 |
+| **Fashion** | Jost | Playfair Display |
+| **Food** | DM Sans | Fraunces |
+
+Each font offered by those two controls loads every weight the theme draws it at — for body
+text, regular through extra-bold plus italic — so bold text comes from the real bold cut
+instead of being thickened by the browser. (The checkout's own font controls are separate
+and unchanged.)
+
+!!! warning "Upgrading from an earlier build? Pick your fonts again"
+    Earlier builds saved a font with a single weight, for example
+    `Google_Plus+Jakarta+Sans_400`. A saved setting is kept when you upgrade, so a store
+    that still has one of those loads that one weight only, and every bold heading, price
+    and button label is faked by the browser. Open both font controls, select your font
+    again and save; the setting is rewritten with every weight, for example
+    `Google_Plus+Jakarta+Sans_400,500,600,700,800,400italic`. If the dropdown already
+    shows your font, pick a different one first and then yours, so the editor registers a
+    change.
 
 ## Announcement bar
 
@@ -76,12 +130,32 @@ All Categories panel.
 | **Brand story** | On/off |
 | **Press bar** | On/off, a title, and five logo-plus-link slots |
 
+### Hero focus on phones and tablets
+
+The hero photographs are wide, and below 1100px the hero box is much narrower than the
+picture, so the photo is cropped to fill it. **Hero 1 Focus**, **Hero 2 Focus** and
+**Hero 3 Focus (phones & tablets)**, one per slide, choose which part of the width stays
+in view: `0% (left)` keeps the left edge, `50% (centre)` crops evenly from both sides,
+`100% (right)` keeps the right edge, in steps of 10%. Set each one to where the subject of
+that slide stands. Desktop always shows the centred crop.
+
+| Variation | Hero 1 | Hero 2 | Hero 3 |
+| --- | --- | --- | --- |
+| **Home** | 50% | 50% | 50% |
+| **Fashion** | 80% | 90% | 90% |
+| **Food** | 70% | 80% | 80% |
+
+These are the values each variation ships with, chosen for its own photographs. A slide
+replaced through Page Builder (see [Replacing the homepage hero](page-builder.md#replacing-the-homepage-hero))
+is your own widget, and its focus setting does not apply to it.
+
 ## Product pages
 
 | Setting | Effect |
 | --- | --- |
 | **Sticky ATC Bar** | Keeps an add-to-cart bar visible as the shopper scrolls past the buy box |
 | **Q&A Tab** | Adds a questions tab to the product tabs |
+| **Compare button outside category and brand pages** | Shows the compare button on product cards. Turned off, no card shows it, category and brand pages included; turned on, those two pages also need BigCommerce's own product comparison setting |
 
 ## Cart
 
@@ -95,3 +169,29 @@ All Categories panel.
 
 Set the **Free Shipping** threshold to match the free-shipping rule you configured in
 **Settings → Shipping**. The theme does not read your shipping rules; it only draws the bar.
+
+Below the threshold, the cart page, the cart sheet that opens after Add to Cart, and the
+product page all say how much is still missing — "Add $12.00 more for free shipping" —
+in the shopper's currency. Once the cart reaches it, the shipping row reads **FREE**.
+
+The cross-sell row on the cart page leaves out products that are already in the cart. If
+that leaves fewer products than the row holds, it shows the ones that remain.
+
+## Prices hidden from guests
+
+BigCommerce can hide prices from shoppers who are not signed in. That is a store setting,
+not a theme one, and the theme follows it everywhere it prints a price. For a guest on such
+a store, Yen shows no price on:
+
+- product cards, wherever they appear
+- the product page, its bulk pricing table and its fixed shipping cost
+- the free-shipping progress bar in the cart (the threshold sentence stays, the bar and the
+  amount still missing do not)
+- the structured data (JSON-LD) search engines read from the product page
+
+!!! info "What this means for search results"
+    The theme leaves the whole `offers` block out of the structured data for guests, since
+    an offer without a price is an error in Google's Rich Results test. Search engines crawl
+    as guests, so Google has no price or availability to show in a rich result for your
+    products. That is the trade-off of hiding prices from guests. Signed-in shoppers see
+    every price as usual.

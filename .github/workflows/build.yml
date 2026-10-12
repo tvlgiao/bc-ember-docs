@@ -37,6 +37,10 @@ jobs:
       #  - the About statistics are template literals, so a merchant told to edit the
       #    language file searches it for "50K+" and finds nothing
       #  - editing lang/en.json changes English alone
+      #  - a primary button control left at #1B1D21 / #333333 / #000000 counts as not set, so
+      #    choosing exactly that colour changes nothing
+      #  - a font saved by an earlier build loads one weight until it is picked again
+      #  - hiding prices from guests also removes them from the structured data Google reads
       - name: Check the guide still covers what merchants get wrong
         run: |
           python - <<'PY'
@@ -60,6 +64,9 @@ jobs:
               'not into the language file',
               'templates/pages/custom/page/about.html',
               'every locale you have enabled needs the same edit',
+              'is treated as untouched',
+              'select your font again',
+              'Google has no price or availability',
           ]
 
           missing = [phrase for phrase in required if phrase not in guide]

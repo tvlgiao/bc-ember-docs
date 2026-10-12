@@ -73,10 +73,10 @@ Garden, Fashion & Jewelry, or Food & Beverage.
 
 - :material-table: **[Settings Reference](settings-reference.md)**
 
-    All 367 settings across 9 sections, grouped the way the editor groups them.
+    All 380 settings across 9 sections, grouped the way the editor groups them.
 
 - :material-lifebuoy: **[Troubleshooting](troubleshooting.md)**
 
-    The five things that most often look broken, and why they usually are not.
+    The things that most often look broken, and why they usually are not.
 
 </div>
