@@ -1,6 +1,6 @@
 # Page Builder
 
-Yen Theme exposes 33 Page Builder regions. Open **Storefront → Page Builder**, pick a page,
+Ember Theme exposes 33 Page Builder regions. Open **Storefront → Page Builder**, pick a page,
 and drag widgets into the highlighted drop zones.
 
 ## Replacing the homepage hero
@@ -11,7 +11,7 @@ content entirely, which is how you use a custom hero without editing theme files
 region empty and the theme renders its own slide.
 
 The hero slots are used only when the store has no Storefront → Carousel slides, or when
-Theme Editor → Yen Theme → Homepage → *Hero: Storefront > Carousel slides* is off. While that
+Theme Editor → Ember Theme → Homepage → *Hero: Storefront > Carousel slides* is off. While that
 setting is on and Control Panel carousel slides exist, the hero is built from those slides
 instead.
 

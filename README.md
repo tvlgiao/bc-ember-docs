@@ -1,14 +1,14 @@
-# bc-yen-docs
+# bc-ember-docs
 
-Documentation site for the **Yen** BigCommerce theme by [PapaThemes](https://papathemes.com).
+Documentation site for the **Ember** BigCommerce theme by [PapaThemes](https://papathemes.com).
 
-Production URL: <https://tvlgiao.github.io/bc-yen-docs/>
+Production URL: <https://tvlgiao.github.io/bc-ember-docs/>
 
 The PapaThemes convention is a `bc-<theme>-docs.papathemes.com` subdomain, and
-`bc-yen-docs.papathemes.com` is reserved for this site. It has no DNS record yet, so the site is
+`bc-ember-docs.papathemes.com` is reserved for this site. It has no DNS record yet, so the site is
 served from the GitHub Pages address for now. To switch back, first add a DNS record at name.com
-(`CNAME bc-yen-docs -> tvlgiao.github.io`). Then restore `docs/CNAME` (`bc-yen-docs.papathemes.com`),
-point `site_url` in `mkdocs.yml` at it, redeploy, and update `meta.documentation_url` in bc-yen-theme.
+(`CNAME bc-ember-docs -> tvlgiao.github.io`). Then restore `docs/CNAME` (`bc-ember-docs.papathemes.com`),
+point `site_url` in `mkdocs.yml` at it, redeploy, and update `meta.documentation_url` in bc-ember-theme.
 
 This is the URL `meta.documentation_url` points at in the theme's `config.json`, and the
 one BigCommerce opens during Theme Marketplace review.
@@ -53,7 +53,7 @@ each deploy.
 Most pages are written here and this repository is their only home.
 
 `docs/settings-reference.md` is the exception: it is **generated** from `schema.json` in
-the [bc-yen-theme](https://github.com/tvlgiao/bc-yen-theme) repository by
+the [bc-ember-theme](https://github.com/tvlgiao/bc-ember-theme) repository by
 `scripts/docs/build-settings-reference.js`, and a test there fails when the committed copy
 drifts from the schema. When a theme setting is added, regenerate it in that repository and
 copy the result here — editing it by hand puts the two out of step, and the theme repo is

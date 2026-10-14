@@ -5,5 +5,5 @@
 3. Once it appears under **My Themes**, click **Apply** to make it the active theme.
 4. Click **Customize** on the applied theme to open the Theme Editor.
 
-Nothing else needs installing. Yen Theme uses no external services and asks for no API
+Nothing else needs installing. Ember Theme uses no external services and asks for no API
 keys — everything it renders comes from your store's own catalog and settings.

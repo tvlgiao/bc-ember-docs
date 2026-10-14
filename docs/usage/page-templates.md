@@ -1,6 +1,6 @@
 # The other page templates
 
-Yen Theme ships four custom page layouts. The Lookbook is covered above; the other three
+Ember Theme ships four custom page layouts. The Lookbook is covered above; the other three
 work the same way — create a web page under **Storefront → Web Pages**, then pick the
 template from the dropdown on that page's edit screen.
 

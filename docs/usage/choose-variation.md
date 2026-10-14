@@ -1,6 +1,6 @@
 # Choosing a variation
 
-Yen Theme ships three variations. Every one has the same features: a variation is a set
+Ember Theme ships three variations. Every one has the same features: a variation is a set
 of settings, and none adds or removes a page or a function.
 
 What separates them is the layout as well as the colour and type. Each variation selects
@@ -14,7 +14,7 @@ Home & Garden, Fashion & Jewelry, or Food & Beverage.
 | **Fashion** | Editorial | Centred logo over the menu, full-bleed hero, three-across grid, display serif, brass accent, opens in dark mode. | [ember-fashion-demo](https://ember-fashion-demo.mybigcommerce.com) |
 | **Food** | Market | Wide search on the top row with the aisles below, framed hero with the copy on the photo, round category tags, five-across home grids, herb green. | [ember-food-demo](https://ember-food-demo.mybigcommerce.com) |
 
-The preset is an ordinary setting, **Theme Editor → Yen Theme → Layout Preset**, so any
+The preset is an ordinary setting, **Theme Editor → Ember Theme → Layout Preset**, so any
 variation can take any of the three: the Food colours on the Classic layout, for example.
 
 Switch variations in **Theme Editor → the variation dropdown at the top**. Note that

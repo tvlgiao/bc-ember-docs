@@ -1,13 +1,13 @@
 # The Theme Editor, section by section
 
-The editor is organised into nine sections. One of them, **Yen Theme**, holds everything
+The editor is organised into nine sections. One of them, **Ember Theme**, holds everything
 about how the storefront looks. Another, **Lookbook**, configures the shoppable-scenes
 page. The remaining seven are `i18n.*` sections holding storefront wording, which
 BigCommerce fills from the theme's language files — most stores never open them.
 
 ## Dark Mode
 
-Yen Theme has a real dark mode, not an inverted filter. Both palettes are designed.
+Ember Theme has a real dark mode, not an inverted filter. Both palettes are designed.
 
 | Setting | Effect |
 | --- | --- |
@@ -44,7 +44,7 @@ often fails on the dark surface.
 ### Primary button colour
 
 Primary buttons — Add to Cart, Checkout, Sign In, Apply — take their fill from
-**Yen Theme → Button** in light mode and **Dark Mode Colors → Button** in dark mode. Hover
+**Ember Theme → Button** in light mode and **Dark Mode Colors → Button** in dark mode. Hover
 and pressed shades are mixed from it, so one colour is all you set.
 
 The standard Cornerstone controls under **Buttons and icons → Primary action button** still
@@ -181,7 +181,7 @@ that leaves fewer products than the row holds, it shows the ones that remain.
 
 BigCommerce can hide prices from shoppers who are not signed in. That is a store setting,
 not a theme one, and the theme follows it everywhere it prints a price. For a guest on such
-a store, Yen shows no price on:
+a store, Ember shows no price on:
 
 - product cards, wherever they appear
 - the product page, its bulk pricing table and its fixed shipping cost

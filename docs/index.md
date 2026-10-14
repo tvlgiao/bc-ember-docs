@@ -3,7 +3,7 @@ layout: page
 toc: true
 ---
 
-# Yen — BigCommerce Theme User Guide
+# Ember — BigCommerce Theme User Guide
 
 A Stencil theme built on Cornerstone by **[PapaThemes](https://papathemes.com)**.
 
@@ -17,7 +17,7 @@ A Stencil theme built on Cornerstone by **[PapaThemes](https://papathemes.com)**
 This guide is written for **store owners**, not developers. Follow it from top to bottom
 and you will have a storefront configured the way you want it, without touching any code.
 
-Yen Theme uses no external services and asks for no API keys — everything it renders comes
+Ember Theme uses no external services and asks for no API keys — everything it renders comes
 from your own catalog and settings.
 
 You will learn how to:

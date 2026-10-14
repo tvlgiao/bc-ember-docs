@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.0.2 — 14 October 2026
+
+- Theme renamed from Yen to Ember. Settings, layouts and features are unchanged.
+
 ## 1.0.1 — 14 October 2026
 
 Maintenance release. No settings change; installing over 1.0.0 keeps your configuration.
