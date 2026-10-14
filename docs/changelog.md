@@ -1,5 +1,33 @@
 # Release Notes
 
+## 1.0.1 — 14 October 2026
+
+Maintenance release. No settings change; installing over 1.0.0 keeps your configuration.
+
+### Fixes
+
+- **Create account:** every custom sign-up field you add in the control panel now shows.
+  Fields whose name contained words such as "Birthday" or "Pay by PO" were hidden and lost
+  their required flag.
+- **Account menu:** Messages and Recently Viewed are back in the account sidebar and on the
+  dashboard.
+- **Account dashboard:** order, wish list and return counts are no longer capped at the number
+  of items previewed; a long list shows "N+". The Addresses count, which BigCommerce does not
+  provide on this page, was removed.
+- **Account settings:** Chrome no longer fills the saved password into New Password, which
+  blocked saving a name or email change. The password fields sit in their own "Change
+  password" group with a hint, and form fields carry the right autocomplete values.
+- **Maintenance and hibernation pages:** the browser tab shows the page heading instead of an
+  empty title, and an empty favicon or logo is no longer printed.
+- **Newsletter confirmation pages:** buttons keep readable contrast on hover and focus in all
+  three variations, light and dark; the breadcrumb names the current page. The default
+  newsletter and home promo banner text no longer promises a fixed discount ("up to 30% off",
+  "Up to 50% OFF") in any language.
+
+### Other
+
+- Security patches to build tools. No storefront change.
+
 ## 1.0.0 — Initial release
 
 Yen Theme for BigCommerce, built on Cornerstone 6.19.0.
