@@ -1,5 +1,42 @@
 # Release Notes
 
+## 1.0.5 — 15 October 2026
+
+Maintenance release. No setting was added, removed or renamed, so installing over 1.0.4 keeps
+your configuration. One new storefront text, the "Added to cart" heading below, ships
+translated in every language file; there is nothing to configure.
+
+### Fixes
+
+#### Phones
+
+- **Newsletter sign-up in one row:** in the footer and the home page newsletter band, the email
+  field and its subscribe button now sit in a single row, with an arrow button inside the end
+  of the field, instead of a field stacked over a full-width button. Tablets and desktops look
+  as before.
+- **Sign in first in the mobile menu:** at the bottom of the menu drawer, Sign in is the filled
+  main button and Register (Log out when signed in) the outlined one, and the drawer no longer
+  ends in a band of empty space.
+- **Closer hero slide dots:** the slide dots on the home page hero are larger and closer
+  together, each still easy to tap, and the pause button is easier to hit. Tablets and desktops
+  look as before.
+- **Calmer tap feedback:** tapping a link or button no longer flashes a grey square over
+  rounded chips and tiles. Category chips, category tiles and hero buttons show a brief colour
+  change when pressed instead.
+
+#### Cart
+
+- **"Added to cart" after adding:** the cart panel that opens after Add to Cart is headed
+  "Added to cart" with a check mark, so shoppers see at once that the item went in. Opened from
+  the cart icon in the header it still reads "Your Cart".
+
+#### Product images
+
+- **Image backgrounds blend in light mode:** product photos on cards, in Quick View, on the
+  product page and in the cart sit on a soft background matched to each style (Home, Fashion,
+  Food), so photos shot on an off-white studio background no longer show as a separate pale
+  box. Dark mode, banners, lookbook, category and brand images are unchanged.
+
 ## 1.0.4 — 15 October 2026
 
 Maintenance release. No setting was added, removed or renamed, so installing over 1.0.3 keeps
