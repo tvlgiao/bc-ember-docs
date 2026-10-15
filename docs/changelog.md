@@ -1,5 +1,37 @@
 # Release Notes
 
+## 1.0.4 — 15 October 2026
+
+Maintenance release. No setting was added, removed or renamed, so installing over 1.0.3 keeps
+your configuration.
+
+### Fixes
+
+#### Header
+
+- **The logo follows its size setting:** a "Logo image size" other than the default 250x100 in
+  the Theme Editor can now make the header logo larger, up to 80px tall on tablets and
+  desktops, and the header row grows with it. Before, the logo was capped at 56px (44px in
+  Fashion), so a larger size could only shrink it. The default size looks as before, and phones
+  keep their 40px logo.
+
+#### Product cards
+
+- Keyboard users tab through a product card from top to bottom: the wish list, Quick View and
+  compare buttons drawn on the product image come before the product name and the add to cart
+  button. Nothing moves on screen.
+
+#### Category pages
+
+- A widget placed in the region below the product list (`category_below_content`) lines up
+  with the products column beside the filter sidebar, spans the page where the filters are in
+  the drawer, and no longer runs under the footer.
+
+#### Accessibility & touch
+
+- On touch screens, radio button labels in forms get a 44px tap row like the checkboxes, and
+  the checkbox and radio boxes line up with the first line of their label.
+
 ## 1.0.3 — 15 October 2026
 
 Maintenance release. No setting was added, removed or renamed, so installing over 1.0.2 keeps
