@@ -1,5 +1,107 @@
 # Release Notes
 
+## 1.0.3 — 15 October 2026
+
+Maintenance release. No setting was added, removed or renamed, so installing over 1.0.2 keeps
+your configuration.
+
+### New
+
+- **Two home page widget regions** for Page Builder: `home_above_products`, directly above the
+  first product feed (above the product tabs in Home and Fashion, above the New Arrivals shelf
+  in Food), and `home_above_footer`, at the end of the page above the footer.
+- **Quick View follows its setting:** "Show quickview button on product cards" now removes the
+  button everywhere when off. When on, the button also shows on touch tablets (768px and
+  wider), including the narrow cards of the home tabs and Food shelves.
+- **Share buttons follow the control panel:** the product page shows the social sharing buttons
+  you pick in the control panel, including Print and Facebook Like.
+
+### Fixes
+
+#### Product page
+
+- Adding to a wish list from the product page saves the item again; before, the request went
+  out empty and nothing was added.
+- The wish list menu is no longer cut off on screens 860-1090px wide.
+- No "Get it by" delivery date on pre-order products.
+- A fixed shipping cost is shown in the shopper's currency.
+- Products with a price range show no strike-through price until a variant is chosen.
+- The free-shipping progress bar no longer counts the item just added twice.
+- A product with one image shows no thumbnail strip.
+- The review form fields line up, and the confirmation message scrolls into view after sending.
+
+#### Cart
+
+- One "Promo code or gift card" box tries the code as a coupon, then as a gift certificate. In
+  a currency other than your default it reads "Promo code", because BigCommerce only accepts
+  gift certificates in the default currency. Applied gift certificates still list with Remove.
+- Order Summary: discounts on their own row, the shipping amount on one line, no "FREE" when
+  every shipping option costs money, and a visible arrow in dark mode.
+- The cart lines up with the page title.
+- Escape closes the cart drawer and returns focus to the cart button.
+- Product Set widget dots on the cart page no longer show over the sticky header.
+- The free-shipping card matches the warm card colour in Food dark mode.
+- The gift certificate Remove link no longer touches its amount.
+
+#### Search & filters
+
+- The filters sidebar is hidden on the News & Information search tab.
+- Brand pages: the price filter chip is formatted as currency, filtering down to no products
+  shows the empty-results message, and stores without faceted search keep the Filters button
+  and Shop by Brand drawer.
+- The /brands/ page uses the brand image size setting.
+
+#### Home & footer
+
+- Hero slides: the old caption fades out before the new one appears.
+- Several marketing banners in one location no longer print a stray comma.
+- Promotion notices on the home page stay inside the page width.
+- The footer newsletter form shows on every page, uses your control panel newsletter summary
+  when one is set, and tells shoppers who are already subscribed.
+- Home blog excerpts end on a whole word with an ellipsis.
+- Brand initial tiles are readable in dark mode.
+
+#### Account
+
+- The Create Account tab is hidden when account creation is turned off.
+- Account pages: heading spacing on tablets and desktops, and the Email field styled like the
+  other fields.
+
+#### Checkout and other pages
+
+- Checkout, order confirmation, maintenance and hibernation pages keep the logo readable on
+  dark headers: the dark-mode logo when set, otherwise a light plate behind the logo.
+- Web page content follows the body font size setting.
+- Products without an image show a sharp SVG placeholder.
+
+#### Accessibility & touch
+
+- On touch screens, buttons and controls get a 44x44px tap area: main buttons, cart quantity,
+  edit and remove, the sticky add to cart, home tabs, Lookbook card buttons, the filter drawer
+  close button, card icons and share buttons. Mouse use on desktop is unchanged.
+- Better contrast for testimonial initials, Lookbook hotspot numbers and the gift certificate
+  icon in dark mode.
+- The cart icon announces the item count with the right plural form in every language.
+- Compare page links and Product Set dots meet the minimum target size.
+- Cart item options are read as label and value pairs by screen readers.
+
+#### Mobile/tablet layout
+
+- Lookbook "Choose options" buttons are no longer clipped at 761-820px in Fashion.
+- Long brand names on product cards wrap to two lines instead of being cut off; card rows stay
+  aligned.
+- Compare page: a Sold Out label for sold-out products and star rows aligned across columns.
+- The product page share row wraps on small phones instead of being cut off.
+- Food shelves at 320px keep the stars and review count on one line.
+- The quick search panel on tablets lines up with the search field.
+- Currency menu title and Quick View brand text are slightly larger.
+
+### Other
+
+- The Outfit font is only loaded by the Home layout, so Fashion and Food pages load less.
+- New storefront texts are translated into all 20 languages; some are machine translations.
+- Marketplace descriptions corrected for the Home font and the Fashion header.
+
 ## 1.0.2 — 14 October 2026
 
 - Theme renamed from Yen to Ember. Settings, layouts and features are unchanged.

@@ -156,6 +156,11 @@ is your own widget, and its focus setting does not apply to it.
 | **Sticky ATC Bar** | Keeps an add-to-cart bar visible as the shopper scrolls past the buy box |
 | **Q&A Tab** | Adds a questions tab to the product tabs |
 | **Compare button outside category and brand pages** | Shows the compare button on product cards. Turned off, no card shows it, category and brand pages included; turned on, those two pages also need BigCommerce's own product comparison setting |
+| **Show quickview button on product cards** | Shows the Quick View button on product cards. Turned off, no card shows it anywhere; turned on, it also shows on touch tablets 768px and wider, where it is always visible instead of appearing on hover. Touch phones never show it |
+
+The share buttons under the product follow the social sharing buttons ticked in the control
+panel, in the same order, including Print and the Facebook Like button. Untick them all and the
+product page shows no share row.
 
 ## Cart
 
