@@ -1,5 +1,52 @@
 # Release Notes
 
+## 1.0.6 — 16 October 2026
+
+Maintenance release. No setting was added, removed or renamed, so installing over 1.0.5 keeps
+your configuration. Two new storefront texts, the promo code links in the cart panel below,
+ship translated in every language file; there is nothing to configure.
+
+### Fixes
+
+#### Account
+
+- **Wishlist cards show the product again:** on a wishlist page, the product photo no longer
+  covers the card, so the name, the price and the Add to Cart button are visible and can be
+  tapped.
+- **Clearer "Required" labels:** the "Required" note next to form fields is 12px at every
+  screen width, the same as on phones.
+
+#### Currency
+
+- **Switching currency without a cart:** choosing another currency before anything is in the
+  cart now switches the store currency straight away, with no error in the browser console.
+  With items in the cart, the cart changes to the new currency as before.
+- **Fashion currency button:** in the Fashion style, the currency button in the top bar is as
+  large and easy to tap as in the Home style.
+
+#### Cart
+
+- **Promo codes in the cart panel:** the cart panel now shows a link, "Have a promo code? Apply
+  it in your cart" (or "promo code or gift card" when gift certificates are on), that opens the
+  cart page, instead of a field that could not be typed in.
+- **Easier quantity buttons:** the - and + buttons in the cart panel have a larger tap area on
+  phones and tablets, and with a mouse on small laptops; they look the same.
+- **Remove confirmation in the theme style:** removing an item from the cart panel asks for
+  confirmation in the theme's own dialog, the same one the cart page uses, instead of the
+  browser's plain pop-up. Pressing Escape closes the dialog and leaves the cart panel open.
+
+#### Food style
+
+- **Readable reviews in dark mode:** in the Food style in dark mode, the review date and the
+  "Verified" badge on home page testimonials have stronger contrast.
+
+#### Pages
+
+- **Newsletter confirmation pages:** the pages shown after subscribing, unsubscribing or
+  creating an account no longer show a white band above the content panel.
+- **Sale link:** when no promo banner link is set, the home page promo button opens /sale/
+  directly, without a redirect.
+
 ## 1.0.5 — 15 October 2026
 
 Maintenance release. No setting was added, removed or renamed, so installing over 1.0.4 keeps
