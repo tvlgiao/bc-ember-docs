@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.0.7 — 16 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.0.6 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Account
+
+- **Wishlist Add to Cart readable in dark mode:** on a wishlist page in dark mode, the Add to
+  Cart button label was dark on the dark card and almost invisible. The label, the outline and
+  the hover fill now follow the colour mode. The Pre-order button and the stock note below it
+  are easier to read too.
+
 ## 1.0.6 — 16 October 2026
 
 Maintenance release. No setting was added, removed or renamed, so installing over 1.0.5 keeps
