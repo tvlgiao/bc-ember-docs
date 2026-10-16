@@ -13,6 +13,8 @@ nav:
     - usage/lookbook.md
     - usage/page-templates.md
     - usage/page-builder.md
+    - usage/featured-promotions.md
+    - usage/backorders.md
   - Settings Reference: settings-reference.md
   - Release Notes: changelog.md
   - Troubleshooting: troubleshooting.md

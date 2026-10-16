@@ -1,5 +1,76 @@
 # Release Notes
 
+## 1.1.0 — 17 October 2026
+
+Feature release. Installing over 1.0.7 keeps your configuration: no setting was removed or
+renamed. Three settings are new, under Theme Styles > Products > Featured promotions, and start
+with the values below. Two new storefront texts ship translated in every language file.
+
+| New setting | Default |
+|---|---|
+| Show featured promotions (`show_featured_promotions`) | On |
+| Promotion background (`yen-offer-bg-color`) | Home #FFF7ED, Fashion #F7F3EC, Food #FBEFE6 |
+| Promotion text (`yen-offer-text-color`) | Home #B84600, Fashion #7A5D33, Food #8C3B26 |
+
+### New features
+
+#### Featured Promotions
+
+- **Promotion callouts on products:** when you feature an automatic promotion and give it a
+  callout, the callout shows under the price on product cards (category, brand, search, home
+  sections, related products, quick search), on the product page and in quick view. Cards show
+  the top promotion and "+N more offers"; the product page and quick view list every one. Turn
+  it off, or change its colours, in Theme Styles > Products > Featured promotions. Dark mode
+  builds the callout colours from your Dark Mode Colors.
+- **BigCommerce rollout:** BigCommerce is enabling featured promotion data store by store.
+  Until it is on for your store, no callouts appear, and nothing else changes.
+
+#### Backorders
+
+- **Backorders on the product page and in quick view:** a product that can be backordered keeps
+  Add to Cart when nothing is on hand (it is no longer labelled Sold Out), shows the
+  availability prompt, how many units will be backordered and the product's backorder message
+  (or your store's default message), and, for pick-list options, each option's own lines. A
+  quantity above what can be sold disables Add to Cart with "The maximum purchasable quantity
+  is N", also per pick-list option. The "Get it by" delivery estimate is withdrawn while any
+  unit is backordered.
+- **Backorders in the cart and orders:** cart lines, in the cart page and the cart panel, show
+  how many units are ready to ship, how many will be backordered and the backorder message,
+  with a group per pick-list option, and the cart summary adds your shipping expectation when
+  the cart holds a backordered item. Order details in My Account show the same lines under each
+  product and the shipping expectation under the shipping address. What shows follows your
+  Settings > Inventory choices. Backorder quantities appear only when Settings > Inventory >
+  Stock level display is not "Don't show": BigCommerce sends no backorder figures while stock
+  levels are hidden.
+
+### Fixes
+
+#### Product page
+
+- **Sold-out variant after an in-stock one:** choosing a sold-out variant after an in-stock one
+  now disables Add to Cart and shows Sold Out; the earlier variant's stock figure no longer
+  carries over. A quick view opened over a product page reads its own product's stock, not the
+  page product's.
+
+#### Shipping
+
+- **No free-shipping promise next to a fixed shipping cost:** a product with its own fixed
+  shipping cost no longer shows the free-shipping bar on the product page; the line by Add to
+  Cart states the cost instead. In the cart page and the cart panel, the free-shipping progress
+  and "FREE" are left out when every product in the cart has a fixed shipping cost.
+
+#### Tablets
+
+- **Larger tap areas on touch tablets:** on tablets (768 to 1024px wide, touch screens), footer
+  links, social icons, pagination, brand letters, grid/list toggles, the top-bar currency and
+  light/dark buttons, product option chips and Lookbook markers have 44px tap areas. Layouts
+  with a mouse are unchanged; the footer gets a little taller on tablets.
+
+#### Theme package
+
+- **Image provenance:** the theme package includes `assets/PROVENANCE.md`, which records how
+  each bundled and demo image was made and its licence terms.
+
 ## 1.0.7 — 16 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
@@ -10,9 +81,9 @@ over 1.0.6 keeps your configuration; there is nothing to configure.
 #### Account
 
 - **Wishlist Add to Cart readable in dark mode:** on a wishlist page in dark mode, the Add to
-  Cart button label was dark on the dark card and almost invisible. The label, the outline and
-  the hover fill now follow the colour mode. The Pre-order button and the stock note below it
-  are easier to read too.
+  Cart button label was dark on the dark card and almost invisible, and in light mode its
+  outline was very faint. The label, the outline and the hover fill now follow the colour mode.
+  The Pre-order button and the stock note below it are easier to read too.
 
 ## 1.0.6 — 16 October 2026
 
