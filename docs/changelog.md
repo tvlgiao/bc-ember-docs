@@ -1,5 +1,32 @@
 # Release Notes
 
+## 1.1.1 — 17 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.0 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Readability
+
+- **12px minimum text size:** every text in the theme is now at least 12px at every screen
+  width, including the "Required" note on account forms, small labels, badges, the header cart
+  and wish list counts, and printed invoices. The cart's trust tiles keep "Secure checkout" on
+  one line.
+
+#### Phones and tablets
+
+- **Larger tap areas:** on touch screens up to 1024px wide, these controls now have 44px tap
+  areas while looking the same: the wish list remove button and wish list actions, product
+  colour swatches (including "None"), Lookbook markers, blog tags and categories, address Edit
+  and Delete links, account menu and order filters, search result and FAQ tabs, the header logo
+  on tablets and the Food hero arrows. Layouts with a mouse are unchanged.
+
+#### Footer
+
+- **X icon for a social link named "X":** a social media link named "x" now shows the X mark in
+  the footer, as one named "twitter" already did, instead of a generic globe.
+
 ## 1.1.0 — 17 October 2026
 
 Feature release. Installing over 1.0.7 keeps your configuration: no setting was removed or
