@@ -1,5 +1,46 @@
 # Release Notes
 
+## 1.1.5 — 21 October 2026
+
+Installing over 1.1.4 keeps your configuration: no setting was removed or renamed, and no
+storefront text changed. The Food variation has new default colours (below). A store that
+already uses Food keeps the colours it has saved; it gets the new palette only when the Food
+variation is applied again with its original (default) settings, or when you set the colours
+yourself in Theme Styles.
+
+### Changes
+
+#### Food style: olive and cream
+
+- **New default palette:** the Food variation now uses deep olive (#4F5B2A) for buttons, links
+  and the navigation band, on a fresh cream page (#FBF8F1), with tomato red (#C2401C) for sale
+  badges and the flash-sale countdown. In dark mode the accent is a sage green. Before, Food
+  was terracotta on beige and looked close to the Fashion style. Three new Food colour defaults
+  are set for sale and warning colours; nothing else needs configuring.
+
+### Fixes
+
+#### Category pages
+
+- **Compact category header with the whole photo:** the category title and description sit on
+  the left and the category image on the right, at a fixed height (240px on desktop, 200px on
+  tablets) and at its own shape, so nothing is cut off. On phones the image sits under the
+  title. A category without an image or description shows only what it has, without an empty
+  panel. The title size now matches the brand pages.
+
+#### Faster images
+
+- **Sized images instead of full-size originals:** blog cards on the home page, the blog page
+  and the blog post header, compare-table thumbnails and pattern swatch previews now load an
+  image sized for where it is shown, instead of the full original upload.
+- **Responsive theme images:** the theme's own promo banners, Lookbook scenes and Lookbook room
+  tiles load a size that fits the screen (400, 800 or 1200px wide, WebP where the browser
+  supports it). Images you upload yourself are unchanged.
+
+#### Theme package
+
+- **Marketplace screenshots:** the Food screenshots in the theme package show the new palette.
+
 ## 1.1.4 — 20 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
