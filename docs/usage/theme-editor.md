@@ -149,6 +149,26 @@ These are the values each variation ships with, chosen for its own photographs. 
 replaced through Page Builder (see [Replacing the homepage hero](page-builder.md#replacing-the-homepage-hero))
 is your own widget, and its focus setting does not apply to it.
 
+## Category pages
+
+**The category banner.** The category image you set in BigCommerce is the banner at the top
+of that category's page.
+
+- From 600px wide, the title and description sit on a text panel and the image fills a
+  box beside them: 42% of the banner's width and as tall as the banner (at least 260px,
+  320px on wide screens). The box is about 1.2:1 on a tablet and about 1.8:1 on a wide
+  screen, and the image is cropped to fill it.
+- On phones the image sits behind the title, as a full-width banner.
+
+!!! tip "Choosing a banner image"
+    A landscape image around 3:2, with the subject in the middle, crops the least at
+    every width. Very wide images (3:1 and wider) lose their sides on tablets, and
+    portrait images lose their top and bottom. Upload it at least 1200px wide so it stays
+    sharp on high-density screens.
+
+**Filters.** The Clear button in the filter sidebar appears only once a filter is set. A
+store without product filtering shows a compact Shop By Price block instead.
+
 ## Product pages
 
 | Setting | Effect |

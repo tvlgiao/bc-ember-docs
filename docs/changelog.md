@@ -1,5 +1,39 @@
 # Release Notes
 
+## 1.1.3 — 20 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.2 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Category pages
+
+- **Sharper category banner:** from 600px wide, the category banner puts the title and
+  description on a text panel and shows the category image beside it, in a box 42% of the
+  banner's width and as tall as the banner (at least 260px, 320px on wide screens), instead of
+  a photo stretched behind the text with most of it cut off. The image is drawn close to its
+  own size, so it stays sharp; it is still cropped to fill its box, so a landscape image
+  (around 3:2) with the subject in the middle works best. Phones keep the photo behind the
+  text.
+- **Same category tiles everywhere:** the category tiles on the All Categories page now look
+  the same as the home page tiles in each style. In the Fashion and Food styles that is the
+  dark band with the white name on every photo; before, light photos on All Categories switched
+  to a pale band with dark text.
+- **Readable tile arrow:** the arrow on category tiles keeps the name's colour on hover, so it
+  stays easy to see in the Home and Fashion styles (the Food style has no arrow).
+- **Filters:** the Clear button in the filter sidebar appears only once a filter is set. On
+  stores without product filtering, the price-only sidebar is more compact, and its Min field
+  lines up with the Update button.
+
+#### Fashion style
+
+- **New hero image:** the second home page hero slide in the Fashion style has a new photo.
+
+#### Theme package
+
+- **Image provenance:** `assets/PROVENANCE.md` records the new hero image.
+
 ## 1.1.2 — 20 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
