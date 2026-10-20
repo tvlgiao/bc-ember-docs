@@ -1,5 +1,22 @@
 # Release Notes
 
+## 1.1.2 — 20 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.1 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Fashion style
+
+- **Option labels centred:** on the product page in the Fashion style, size and colour option
+  labels sit in the middle of their boxes instead of near the top.
+
+#### Theme package
+
+- **Image provenance:** `assets/PROVENANCE.md` now also records the extra product photos added
+  to the demo stores.
+
 ## 1.1.1 — 17 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
