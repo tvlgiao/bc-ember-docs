@@ -1,5 +1,30 @@
 # Release Notes
 
+## 1.1.4 — 20 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.3 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Home page hero (Fashion and Food styles)
+
+- **More of the hero photo on wide screens:** on screens wider than about 1320px, the home page
+  hero in the Fashion and Food styles grows taller with the width, up to the height of the
+  window below the header, instead of staying 620px tall and cutting off the top and bottom of
+  the photo. In the Fashion style, when the window is too short to show the whole photo, more
+  is cut from the bottom than the top, so heads and bag handles stay in view. Phones, tablets
+  and narrower desktops look as before.
+- **Your own carousel images:** when the hero shows your Control Panel carousel, the shape of
+  the first slide's image sets how tall the hero grows; a very wide banner image keeps the
+  620px height.
+- **Fashion: copy centred:** from 801px wide, the hero headline and buttons in the Fashion
+  style sit in the middle of the photo's height instead of near the top.
+- **With a banner above:** when a marketing banner or a widget sits above the hero, the hero
+  keeps its 620px height.
+
+The Home style's hero is unchanged.
+
 ## 1.1.3 — 20 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
