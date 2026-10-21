@@ -1,5 +1,30 @@
 # Release Notes
 
+## 1.1.6 — 22 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.5 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Food style: home page offers
+
+- **Lighter offer tiles:** the two offer tiles on the Food home page are brighter. The
+  darkening now sits only behind the text (at the bottom of the tile, and on the left of the
+  deal tile on tablets and desktops) instead of over the whole photo, and the theme's own
+  photos are slightly brightened. A banner image you upload yourself is shown as uploaded.
+
+#### Mobile menu
+
+- **Open currency and language lists:** when you open the currency or language list in the
+  mobile menu, its arrow turns up and the list reads as one group under it. The selected
+  currency is shown in the accent colour with a smaller check.
+
+#### Filters
+
+- **No underline on tapped filter headings:** on phones and tablets, a filter heading you tap
+  (such as Rating or Price) no longer stays underlined.
+
 ## 1.1.5 — 21 October 2026
 
 Installing over 1.1.4 keeps your configuration: no setting was removed or renamed, and no
