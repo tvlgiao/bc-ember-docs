@@ -1,5 +1,50 @@
 # Release Notes
 
+## 1.1.7 — 22 October 2026
+
+Maintenance release. No setting or storefront text was added, removed or renamed, so installing
+over 1.1.6 keeps your configuration; there is nothing to configure.
+
+### Fixes
+
+#### Mega menu
+
+- **Page dims again under an open menu:** when a mega menu panel is open, the rest of the page
+  is dimmed again, as intended. On live stores the dimming had stopped showing.
+
+#### Filters
+
+- **One scrollbar on category, brand and search pages:** the filter sidebar now scrolls with
+  the page instead of inside its own box, so a long filter list no longer shows a second
+  scrollbar. It still stays in view while you scroll when it is short enough to fit under the
+  header.
+
+#### Product page
+
+- **Quantity stepper:** the quantity is now a box with − and + buttons, and shoppers can also
+  type a quantity. There is no longer a limit of 20; the product's own minimum and maximum
+  purchase quantities still apply. Quick view uses the same stepper.
+- **Buttons fill on hover:** the wishlist, compare and Buy Now buttons and the quantity − and +
+  buttons fill with colour when you point at them, and Add to Cart turns a shade darker.
+- **Tabs no longer jump:** switching between Description, Specifications and Reviews keeps the
+  tabs where they are instead of jumping the page.
+- **Payment, trust and share block:** the payment icons, trust badges and share buttons line up
+  on one left edge with even spacing, and the Print share button has a border like the others.
+- **Specifications:** each value now sits right beside its label instead of at the far edge of
+  the column.
+
+#### Cart
+
+- **Cart page quantity:** the quantity stepper on the cart page has the same height and corner
+  shape as the edit and remove buttons next to it.
+- **Compact cart sheet:** the cart sheet that slides in after Add to Cart is more compact, so a
+  laptop screen shows three or more products at once; the promo code link stays visible.
+
+#### Food style: home page offers
+
+- **Smoother offer tile shade:** the darkening behind the text on the Food home page offer tiles
+  fades out smoothly instead of ending in a visible edge.
+
 ## 1.1.6 — 22 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
