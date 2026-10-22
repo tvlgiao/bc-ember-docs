@@ -152,7 +152,15 @@ is your own widget, and its focus setting does not apply to it.
 ## Category pages
 
 **The category header.** The category image you set in BigCommerce sits in the header at
-the top of that category's page, beside the title and description.
+the top of that category's page. **Global → Products → Category header with an image**
+picks how:
+
+| Option | Effect |
+| --- | --- |
+| **Banner: photo behind the title** (default) | The photo fills the header and the breadcrumb, title and description sit on it, over a shade that keeps the text readable |
+| **Split: title beside the whole photo** | The title and description sit beside the image, which is shown whole (the Fashion style starts on Split) |
+
+With **Split**:
 
 - From 600px wide, the title and description are on the left and the image on the right at
   a fixed height: 240px on desktops, 200px on tablets. The image keeps its own shape and is

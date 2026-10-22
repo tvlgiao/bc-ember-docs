@@ -1,5 +1,45 @@
 # Release Notes
 
+## 1.1.8 — 22 October 2026
+
+Adds one setting; nothing was removed or renamed, so installing over 1.1.7 keeps your
+configuration. The new **Category header with an image** setting starts on Banner (the Fashion
+style starts on Split). The gift card preview now labels its names "To" and "From".
+
+### New
+
+#### Category pages
+
+- **Category header banner:** when a category has an image, the photo now sits behind the
+  breadcrumb and title as a banner, with a shade that keeps the title easy to read. Choose the
+  look in **Theme Editor → Global → Products → Category header with an image**: **Banner**
+  (photo behind the title, the default) or **Split** (title beside the whole photo, as before).
+  The Fashion style uses Split. See [Category pages](usage/theme-editor.md#category-pages).
+
+### Fixes
+
+#### Gift certificates
+
+- **On-brand gift card preview:** the gift card preview on the purchase and balance pages uses
+  your theme's accent colours. It shows the amount the shopper picked, in the currency they are
+  shopping in, instead of $0, and the To and From names update as they type.
+
+#### Mega menu
+
+- **Opens smoothly:** the category photo in a mega menu fades in when it loads instead of
+  flashing in at full brightness, and moving between menu items crossfades the panels.
+
+#### Header
+
+- **Cleaner search button:** the search button closes off the end of the header search box
+  neatly, without a double outline.
+
+#### Cart
+
+- **Edit options window fits its content:** the window for changing a cart item's options is
+  sized to its content instead of stretching across the page; option buttons match the product
+  page and Save spans the full width.
+
 ## 1.1.7 — 22 October 2026
 
 Maintenance release. No setting or storefront text was added, removed or renamed, so installing
