@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.1.12 — 23 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.11 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Dialogs
+
+- **Close button lines up with the title:** the close button in every dialog (gift wrapping,
+  write a review, and every other one) sits on the same line as the dialog title instead of
+  slightly below it, and stays beside the first line when a long title wraps.
+
 ## 1.1.11 — 23 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.10 keeps your configuration;
