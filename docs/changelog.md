@@ -1,5 +1,36 @@
 # Release Notes
 
+## 1.1.9 — 23 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.8 keeps your configuration;
+there is nothing to configure. The promo code field in the cart now reads "Promo code", and the
+new gift certificate field reads "Certificate code" (stores that allow several promo codes per
+order).
+
+### Fixes
+
+#### Cart
+
+- **Gift Certificate row:** on stores that allow several promo codes per order (BigCommerce's
+  newer cart summary), the cart summary has its own Gift Certificate row, next to the promo code
+  row. Shoppers select **Add** to open a code field and **Apply** to redeem it, the same way the
+  promo code works. The row is hidden when the shopper is browsing in a currency where gift
+  certificates can't be used. Stores on the classic cart summary keep the gift certificate field
+  as it was.
+- **Promo code field:** the field is now labelled "Promo code". It still accepts a gift
+  certificate code.
+- **Currency after switching:** after a shopper switches currency, the cart now uses the
+  currency they picked instead of the one they were in before.
+- **Quantity buttons:** tapping the − and + buttons on the product page, quick view, cart and
+  cart drawer no longer flashes the browser's blue highlight; the button shows a pressed state in
+  your theme's accent colour. Keyboard users still see the focus outline.
+
+#### Header
+
+- **Search bar corners:** the header search bar follows your theme's corner radius instead of
+  always being fully rounded; the Fashion style keeps square corners. The search box on phones
+  follows the same setting.
+
 ## 1.1.8 — 22 October 2026
 
 Adds one setting; nothing was removed or renamed, so installing over 1.1.7 keeps your
