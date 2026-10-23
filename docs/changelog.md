@@ -1,5 +1,25 @@
 # Release Notes
 
+## 1.1.11 — 23 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.10 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Blog
+
+- **Blog card photos:** blog cards on the home page ("Latest from Our Blog") and the blog page
+  show each post's photo in a 4:3 frame instead of a thin strip, so portrait photos are no
+  longer cut down to a band. On the Food style's home page, where the blog cards sit side by
+  side on wider screens, the photo still fills its column.
+
+#### Header
+
+- **Switching currency with items in the cart:** when a shopper picks another currency while
+  their cart has items, the cart and the page change to that currency together in one step,
+  and the switch no longer risks losing the cart.
+
 ## 1.1.10 — 23 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.9 keeps your configuration;
