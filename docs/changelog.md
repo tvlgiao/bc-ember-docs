@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.1.10 — 23 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.9 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Gift Certificate field in other currencies:** the Gift Certificate field stays available
+  when a shopper views prices in another currency but their cart is still in the store's
+  default currency.
+
 ## 1.1.9 — 23 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.8 keeps your configuration;
