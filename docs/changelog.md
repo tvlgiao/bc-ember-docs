@@ -1,5 +1,45 @@
 # Release Notes
 
+## 1.1.13 — 24 October 2026
+
+Adds one setting; nothing was removed or renamed, so installing over 1.1.12 keeps your
+configuration. The new **Show Apple Pay** setting starts off, so your payment icons look the
+same until you turn it on. The gift wrapping dialog's "choose a gift wrap" text is shorter in
+every language.
+
+### New
+
+#### Payment icons
+
+- **Apple Pay icon:** turn on **Theme Editor → Header and footer → Payment icons → Show Apple
+  Pay** to add an Apple Pay icon next to your other payment icons in the footer, the cart, the
+  product page and the cart drawer. It is off by default.
+
+### Fixes
+
+#### Cart
+
+- **Gift wrap choice fits on phones:** the "Choose gift wrap" text in the gift wrapping dialog
+  fits in the box on phones in every language, instead of being cut off.
+
+#### Home page
+
+- **Cleaner hero slide change:** when the hero slides change, only the pictures crossfade; the
+  old and new headings no longer overlap while the slide changes.
+
+#### Category and brand pages
+
+- **No product lookups on listing pages:** category and brand pages no longer ask the store for
+  product data just to count products. A category's product count comes from the page itself;
+  a brand's count shows when all of its products fit on one page. Brand logos in the Brands
+  menu load when the menu is first opened instead of on every page.
+
+#### Breadcrumbs
+
+- **Breadcrumbs on phones:** the breadcrumb trail now shows on phones on product, category,
+  brand, brands and web pages, on one line; long names in the middle shorten with an ellipsis
+  so the current page stays readable. **Hide breadcrumbs** still removes it.
+
 ## 1.1.12 — 23 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.11 keeps your configuration;

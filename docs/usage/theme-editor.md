@@ -209,6 +209,13 @@ in the shopper's currency. Once the cart reaches it, the shipping row reads **FR
 The cross-sell row on the cart page leaves out products that are already in the cart. If
 that leaves fewer products than the row holds, it shows the ones that remain.
 
+## Payment icons
+
+**Header and footer → Payment icons** has one checkbox per payment method: American Express,
+Discover, Mastercard, PayPal, Visa, Amazon Pay, Apple Pay, Google Pay and Klarna. The icons
+you tick show in the footer, the cart, the product page and the cart drawer. **Show Apple
+Pay** (new in 1.1.13) starts off, so turn it on if your store accepts Apple Pay.
+
 ## Prices hidden from guests
 
 BigCommerce can hide prices from shoppers who are not signed in. That is a store setting,
