@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.1.14 — 24 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.13 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Header
+
+- **Store name shows in full:** a store that has no logo image shows its name in the header. A
+  long name now wraps onto two lines, a little smaller if needed, instead of being cut off with
+  "…". Short names and logo images look the same as before.
+
 ## 1.1.13 — 24 October 2026
 
 Adds one setting; nothing was removed or renamed, so installing over 1.1.12 keeps your
