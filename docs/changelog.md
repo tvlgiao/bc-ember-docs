@@ -1,5 +1,20 @@
 # Release Notes
 
+## 1.1.15 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.14 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Order summary no longer shifts when the cart page loads:** shoppers whose cart was in a
+  currency other than your default one saw the Gift Certificate row disappear about half a
+  second after the page appeared, and the Check out button jumped up. The row now stays put in
+  every currency, and a gift certificate can be applied in a cart of the certificate's own
+  currency, from that row or from the promo code field.
+
 ## 1.1.14 — 24 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.13 keeps your configuration;
