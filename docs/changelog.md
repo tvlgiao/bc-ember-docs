@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.1.17 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.16 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Order summary stays still:** the cart's order summary no longer moves down a moment after
+  the page opens: the Shipping row keeps its height while free shipping is checked. Before a
+  shipping cost is known the row reads "Calculated at checkout" (or FREE once the cart reaches
+  your free-shipping amount), with "Estimate shipping to your address" on a quiet line under it.
+
 ## 1.1.16 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.15 keeps your configuration;
