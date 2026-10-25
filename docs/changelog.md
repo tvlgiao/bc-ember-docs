@@ -1,5 +1,35 @@
 # Release Notes
 
+## 1.1.19 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.18 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Whole product photo in the cart:** the small product photos in the cart, the cart drawer and
+  your account's orders and returns show the whole product instead of cutting off the ends of a
+  wide photo.
+
+#### Home page
+
+- **Shop by Category with only a few categories:** with fewer categories than fill a row (one to
+  three, for example), the cards sit in the middle of the row at their usual size, right above
+  "View all categories", instead of at the left edge with the link far from them. Stores with a
+  full row look the same as before.
+- **Meet the Makers with only a few brands (Food layout):** one to three brands show as
+  normal-size logo tiles in the middle of the row instead of one tile stretched across the whole
+  page.
+
+#### Header
+
+- **Categories menu without subcategories:** when your categories have no subcategories and no
+  category images, the Categories menu opens as a neat list of your categories instead of a large
+  panel with an empty area beside it. In a larger menu, a category without an image now shows its
+  name and an "All" link where its image would be, instead of a blank area.
+
 ## 1.1.18 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.17 keeps your configuration;
