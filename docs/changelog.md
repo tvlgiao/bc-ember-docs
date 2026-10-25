@@ -1,5 +1,21 @@
 # Release Notes
 
+## 1.1.20 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.19 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Product photos in the cart keep their own shape:** the small product photos in the cart, the
+  cart drawer, the added-to-cart window and your account's orders and returns now take the shape
+  of the photo instead of a fixed tile. A wide photo shows whole as a wide thumbnail, with no empty
+  space above and below it (in 1.1.19 it sat as a thin strip in a large empty tile). Square photos
+  fill a square, and only a photo taller than the usual tile is shown slightly narrower. Nothing
+  on the page moves while the photos load.
+
 ## 1.1.19 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.18 keeps your configuration;
