@@ -1,5 +1,60 @@
 # Release Notes
 
+## 1.1.16 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.15 keeps your configuration;
+there is nothing to configure. One default changed: the Home style's checkout button now hovers
+in the theme's burnt orange (#B84600) instead of the bright #FF6A00. To keep the previous
+colour, set the optimized checkout primary button hover colour back to #FF6A00 in Theme Editor.
+
+### Fixes
+
+#### Home page
+
+- **Promo banner headline reads in two balanced lines:** "Our" no longer sits alone above
+  "Best Sellers"; the headline is now "Best Sellers / At Special Prices", in every language the
+  theme ships.
+
+#### Product listings
+
+- **Category banners are lighter:** the shade behind the title on a category's banner photo no
+  longer covers half the photo in solid black. It sits only behind the text, in a warm tone,
+  and fades out well before the far edge, so more of the photo shows. The breadcrumbs, title and
+  description stay as readable as before (WCAG AA on every banner photo of the demo stores).
+- **Brand page header:** the brand's logo shows in a larger tile, so its name is readable, and
+  the header sits closer to the breadcrumbs, as on the other listing pages.
+
+#### Compare
+
+- **No broken image in the compare bar:** if a product's photo is removed after a shopper
+  added it to the compare bar, the bar shows your store's default product image instead of a
+  broken-image icon. The bar also picks up a product's current photo whenever that product is
+  shown on the page.
+
+#### Cart
+
+- **Gift wrapping on a cart line:** once a shopper chooses gift wrapping, the quantity, edit,
+  gift and delete buttons stay on one row, and the chosen wrap (name, price, Change, remove)
+  shows on its own line under them, followed by the gift message. Works on phones too.
+
+#### Checkout
+
+- **Continue button:** clicking Continue no longer leaves a heavy orange glow around it.
+  Hovering shows a light shadow, and the focus ring appears only for shoppers using the
+  keyboard.
+
+#### Pages
+
+- **About page "Ready to Shop?" block** is narrower and centred, with the same space under it
+  as between the other sections, instead of a full-width orange band followed by a large gap
+  before the footer.
+
+#### Prices
+
+- **Discount badges use the shopper's currency:** the "-N%" badges in quick search, the product
+  comparison and the sticky Add to Cart bar now read the currency the page is shown in, not the
+  first currency listed in the header's currency switcher.
+
 ## 1.1.15 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.14 keeps your configuration;
