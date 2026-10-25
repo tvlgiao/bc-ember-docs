@@ -1,5 +1,29 @@
 # Release Notes
 
+## 1.1.18 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.17 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Header
+
+- **Header stays still in dark mode:** the header no longer grows a moment after the page opens
+  in dark mode when a dark logo is set. The dark logo now takes the place your regular logo has
+  reserved, at the same size, and the regular logo is fetched first so that place is ready sooner.
+
+#### Cart
+
+- **Product names hold their line:** product names in the cart no longer nudge the page by a pixel
+  when the font loads.
+
+#### Product page
+
+- **Options are there from the start:** a product's options (size, colour and so on) show as soon
+  as the page appears, instead of a moment later and pushing Add to Cart down. The estimated
+  delivery line keeps its height while the date is worked out.
+
 ## 1.1.17 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.16 keeps your configuration;
