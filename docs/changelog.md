@@ -1,5 +1,30 @@
 # Release Notes
 
+## 1.1.21 — 25 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.20 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Cart
+
+- **Product photos in the cart sit in one square frame:** the small product photos in the cart, the
+  cart drawer, the added-to-cart window and your account's orders and returns are all the same
+  square again, so every line looks alike. The whole photo is shown, centred in the square; a wide
+  or tall photo has an even margin on both sides (in 1.1.20 each photo's frame took its own shape).
+  Square photos fill the square as before, and nothing on the page moves while the photos load.
+
+#### Home page
+
+- **Meet the Makers shows a photo whole (Food style):** a maker shown with a photograph instead of a
+  logo is no longer cut at the top and bottom of its tile; it sits whole and centred with an even
+  margin. Transparent logos (PNG, SVG, WebP) keep their size.
+- **A category without an image looks light (Food and Fashion styles):** a category card with no
+  image no longer has a dark band over its placeholder. The name is shown in your heading colour on
+  the light placeholder (light text in dark mode). This applies on the home page and the All
+  Categories page; cards with images are unchanged.
+
 ## 1.1.20 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.19 keeps your configuration;
