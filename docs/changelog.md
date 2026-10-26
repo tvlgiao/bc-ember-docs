@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.1.23 — 26 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.22 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Pages
+
+- **About page team photos show each person's whole head, with room above it.** Before, on desktop
+  and tablet the photos were cut to a short, wide strip, so heads touched the top edge and hair was
+  cut off. On phones the photos stay square.
+
 ## 1.1.22 — 26 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.21 keeps your configuration;
