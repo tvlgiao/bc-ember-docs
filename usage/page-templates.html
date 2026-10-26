@@ -764,6 +764,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#hero-sentence-and-closing-banner-since-1126" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hero sentence and closing banner (since 1.1.26)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1059,6 +1070,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#hero-sentence-and-closing-banner-since-1126" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hero sentence and closing banner (since 1.1.26)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1124,9 +1146,9 @@ create supplies the URL and the template choice. This is the same arrangement as
 Lookbook, for the same reason — the layouts are designed, not free-form. The one exception is
 the About page's Our Story section, below.</p>
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
-<p>Choose the <strong>About</strong> template. The page has six parts: a heading with your store name, four
-statistics, Our Story (text and photo), six value cards, the team and a closing call to
-action.</p>
+<p>Choose the <strong>About</strong> template. The page has six parts: a heading with your store name and a
+sentence under it, four statistics, Our Story (text and photo), six value cards, the team and a
+closing call to action.</p>
 <div class="admonition tip">
 <p class="admonition-title">Our Story is your own text</p>
 <p>The <strong>Our Story</strong> section shows the text you write for the About Us page in
@@ -1179,6 +1201,34 @@ Home style, a clothes rail for Fashion and pantry jars for Food. To use your own
 </ol>
 <p>The theme serves the photo from the BigCommerce image CDN at the size each screen needs. A
 link to an image on another website is ignored and the default photo is shown instead.</p>
+<h3 id="hero-sentence-and-closing-banner-since-1126">Hero sentence and closing banner (since 1.1.26)<a class="headerlink" href="#hero-sentence-and-closing-banner-since-1126" title="Permanent link">&para;</a></h3>
+<p>The sentence under the page heading ("We're on a mission to bring quality products to
+everyone, everywhere...") and the closing banner ("Ready to Shop?" with its <strong>Shop Now</strong>
+button) share one setting in the same group, <strong>Hero sentence and closing banner</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>What the page shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in text (translated)</td>
+<td>The theme's sample sentence and banner, in the shopper's language, with the button opening the store's category list (<code>/categories</code>). This is the default, and what earlier versions showed.</td>
+</tr>
+<tr>
+<td>Your text below</td>
+<td><strong>Hero sentence</strong>, <strong>Banner title</strong>, <strong>Banner text</strong>, <strong>Button label</strong> and <strong>Button link</strong>. Leave one empty to hide that piece; leave the banner's title, text and button label all empty to remove the banner.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Button link</strong> takes a page of your store: a path such as <code>/shop-all/</code> or <code>/sale/</code>, or the
+full address of a page on your store (starting with your store's own address, for example
+<code>https://yourstore.com/shop-all/</code>). A link to another website, or anything that is not a
+link, opens <code>/categories</code> instead. Each field holds up to 64 characters.</p>
+<p>The sample sentence speaks of shipping "everywhere"; if you ship to a few countries only,
+choose <strong>Your text below</strong> and write a sentence that is true for your store.</p>
 <p>The store name is substituted automatically wherever it appears, so it stays correct if you
 rename the store.</p>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
@@ -1196,7 +1246,8 @@ change it</strong>. Read through it before the page goes live.</p>
   a visitor sees — change one and the other follows</li>
 </ul>
 <h2 id="editing-language-file-content">Editing language-file content<a class="headerlink" href="#editing-language-file-content" title="Permanent link">&para;</a></h2>
-<p>The FAQ page, and the About page's headings, team and built-in statistics and value cards,
+<p>The FAQ page, and the About page's headings, team and built-in statistics, value cards, hero
+sentence and closing banner,
 take their words from <code>lang/</code>, and each language has its own
 complete copy: <code>lang/en.json</code>, <code>lang/de.json</code>, <code>lang/ja.json</code> and so on. Editing
 <code>lang/en.json</code> changes the English storefront and nothing else.</p>
