@@ -4,16 +4,23 @@ Ember Theme ships four custom page layouts. The Lookbook is covered above; the o
 work the same way — create a web page under **Storefront → Web Pages**, then pick the
 template from the dropdown on that page's edit screen.
 
-All three share one thing worth knowing before you start: **what you type into the web
-page body is not what appears**. Each template renders its own content, so the page you
-create supplies the URL and the template choice and nothing else. This is the same
-arrangement as the Lookbook, for the same reason — the layouts are designed, not free-form.
+All three share one thing worth knowing before you start: **most of what you type into the
+web page body is not what appears**. Each template renders its own content, so the page you
+create supplies the URL and the template choice. This is the same arrangement as the
+Lookbook, for the same reason — the layouts are designed, not free-form. The one exception is
+the About page's Our Story section, below.
 
 ## About
 
 Choose the **About** template. Most of the content lives in the theme's language file
-rather than in theme settings: the headings, the story paragraphs, the value cards and the
-labels under the statistics all come from keys beginning `about.`.
+rather than in theme settings: the headings, the value cards and the labels under the
+statistics all come from keys beginning `about.`.
+
+!!! tip "Our Story is your own text"
+    The **Our Story** section shows the text you write for the About Us page in
+    **Storefront > Web Pages** (since 1.1.24). With no text it keeps the built-in copy. Write a
+    paragraph or two about your store; you can use headings, lists and links. The "Our Story"
+    heading and the photo stay as they are.
 
 The four statistic **numbers** are the exception. `50K+`, `10K+`, `50+` and `4.8★` are
 written into `templates/pages/custom/page/about.html` itself, not into the language file —

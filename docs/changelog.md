@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.1.24 — 26 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.23 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Pages
+
+- **About page: the Our Story section shows the text you write for the About Us page in
+  Storefront > Web Pages; with no text it keeps the built-in copy.** See
+  [About](usage/page-templates.md#about).
+
 ## 1.1.23 — 26 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.22 keeps your configuration;
