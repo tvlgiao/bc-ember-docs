@@ -1,5 +1,33 @@
 # Release Notes
 
+## 1.1.25 — 26 October 2026
+
+New settings were added and none removed or renamed, so installing over 1.1.24 keeps your
+configuration. Out of the box the About page looks as it did; nothing changes until you choose
+your own text.
+
+### New
+
+#### Pages
+
+- **About page: your own stats, value cards and story photo.** In **Theme Editor > Ember Theme >
+  About page**, set **Stats** and **Values** to **Your text below** to replace the sample figures
+  ("50K+ Happy Customers") and the six value cards with your own; leave a number or a title
+  empty to hide that item, or choose **Hidden** to remove the section. The sample figures do not
+  describe your store, so change or hide them before the page goes live. For the Our Story
+  photo, upload an image in **Storefront > Image Manager** and enter its file name. Without one,
+  the photo now matches your style: a living room for Home, a clothes rail for Fashion and
+  pantry jars for Food. See [About](usage/page-templates.md#about).
+
+### Fixes
+
+#### All pages
+
+- **The page no longer jumps while it loads on desktop.** The header logo now has its space from
+  the start, so the header and the menu or search bar beside it stay put when the logo arrives.
+  A page that starts shorter than the window no longer moves sideways when the scrollbar
+  appears.
+
 ## 1.1.24 — 26 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.23 keeps your configuration;

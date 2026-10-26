@@ -209,6 +209,21 @@ in the shopper's currency. Once the cart reaches it, the shipping row reads **FR
 The cross-sell row on the cart page leaves out products that are already in the cart. If
 that leaves fewer products than the row holds, it shows the ones that remain.
 
+## About page
+
+Settings for the page that uses the **About** template (since 1.1.25).
+
+| Setting | Effect |
+| --- | --- |
+| **Story photo (Image Manager file name)** | Your own Our Story photo: the file name of an image uploaded in **Storefront > Image Manager**. Empty: the theme's photo for your style. |
+| **Story photo description (alt text)** | What a screen reader says for your photo. |
+| **Stats** | `Built-in text (translated)`, `Your text below` (the four number and label pairs) or `Hidden`. |
+| **Values** | The same three choices for the six value cards (title and text each). |
+
+With **Your text below**, an empty number or title hides that item, and the section
+disappears when all of them are empty. Details and examples:
+[The other page templates](page-templates.md#about).
+
 ## Payment icons
 
 **Header and footer → Payment icons** has one checkbox per payment method: American Express,

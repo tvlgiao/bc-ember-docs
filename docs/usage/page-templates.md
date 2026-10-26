@@ -12,21 +12,50 @@ the About page's Our Story section, below.
 
 ## About
 
-Choose the **About** template. Most of the content lives in the theme's language file
-rather than in theme settings: the headings, the value cards and the labels under the
-statistics all come from keys beginning `about.`.
+Choose the **About** template. The page has six parts: a heading with your store name, four
+statistics, Our Story (text and photo), six value cards, the team and a closing call to
+action.
 
 !!! tip "Our Story is your own text"
     The **Our Story** section shows the text you write for the About Us page in
     **Storefront > Web Pages** (since 1.1.24). With no text it keeps the built-in copy. Write a
     paragraph or two about your store; you can use headings, lists and links. The "Our Story"
-    heading and the photo stay as they are.
+    heading stays as it is.
 
-The four statistic **numbers** are the exception. `50K+`, `10K+`, `50+` and `4.8★` are
-written into `templates/pages/custom/page/about.html` itself, not into the language file —
-searching `lang/en.json` for them will not find them. They are placeholder figures and
-none of them describes your store, so have your developer change them in the template
-before the page goes live.
+### Statistics, value cards and the photo (since 1.1.25)
+
+Open **Storefront > Themes > Customize > Ember Theme > About page**.
+
+**Stats** and **Values** each have three choices:
+
+| Choice | What the page shows |
+| --- | --- |
+| Built-in text (translated) | The theme's sample figures ("50K+ Happy Customers" and so on) and value cards, in the shopper's language. This is the default, and what earlier versions showed. |
+| Your text below | The fields under it: a number and a label for each of the four stats, a title and a short text for each of the six cards. Leave a number or a title empty to hide that item; the rest close up. Leave all of them empty and the section is not shown. |
+| Hidden | No stats section, or no values section. |
+
+The sample figures do not describe your store, so before the page goes live either switch
+Stats to **Your text below** and enter figures that are true for you (for example `30` /
+`Days to return`, `Free` / `Shipping over $50`), or choose **Hidden**. The fields start filled
+with the sample text, so you only change what you need. Each field holds up to 64
+characters. Each card keeps its icon (target, tag, globe, headset, leaf, shield, in that
+order), so write the cards to fit them or leave the ones that do not fit empty.
+
+Text you enter is shown as written in every language. If your store serves several
+languages, the built-in choice is the one that is translated.
+
+**Story photo.** By default the photo matches your theme style: a living room for the
+Home style, a clothes rail for Fashion and pantry jars for Food. To use your own:
+
+1. Upload the photo in **Storefront > Image Manager**. A landscape photo of at least 1200 px
+   wide works best; it is shown about 16:9 and cropped to fill the frame.
+2. Enter its file name in **Story photo (Image Manager file name)**, for example
+   `about-us.jpg`. Pasting the image's path or URL from Image Manager also works.
+3. Describe the photo in **Story photo description (alt text)** for screen readers, or
+   leave it empty if the photo is only decoration.
+
+The theme serves the photo from the BigCommerce image CDN at the size each screen needs. A
+link to an image on another website is ignored and the default photo is shown instead.
 
 The store name is substituted automatically wherever it appears, so it stays correct if you
 rename the store.
@@ -50,7 +79,8 @@ Two things follow from the content living in the language file:
 
 ## Editing language-file content
 
-The About and FAQ pages both take their words from `lang/`, and each language has its own
+The FAQ page, and the About page's headings, team and built-in statistics and value cards,
+take their words from `lang/`, and each language has its own
 complete copy: `lang/en.json`, `lang/de.json`, `lang/ja.json` and so on. Editing
 `lang/en.json` changes the English storefront and nothing else.
 
