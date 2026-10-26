@@ -750,6 +750,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="About">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statistics-value-cards-and-the-photo-since-1125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistics, value cards and the photo (since 1.1.25)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1028,6 +1045,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="About">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statistics-value-cards-and-the-photo-since-1125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistics, value cards and the photo (since 1.1.25)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1090,21 +1124,61 @@ create supplies the URL and the template choice. This is the same arrangement as
 Lookbook, for the same reason — the layouts are designed, not free-form. The one exception is
 the About page's Our Story section, below.</p>
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
-<p>Choose the <strong>About</strong> template. Most of the content lives in the theme's language file
-rather than in theme settings: the headings, the value cards and the labels under the
-statistics all come from keys beginning <code>about.</code>.</p>
+<p>Choose the <strong>About</strong> template. The page has six parts: a heading with your store name, four
+statistics, Our Story (text and photo), six value cards, the team and a closing call to
+action.</p>
 <div class="admonition tip">
 <p class="admonition-title">Our Story is your own text</p>
 <p>The <strong>Our Story</strong> section shows the text you write for the About Us page in
 <strong>Storefront &gt; Web Pages</strong> (since 1.1.24). With no text it keeps the built-in copy. Write a
 paragraph or two about your store; you can use headings, lists and links. The "Our Story"
-heading and the photo stay as they are.</p>
+heading stays as it is.</p>
 </div>
-<p>The four statistic <strong>numbers</strong> are the exception. <code>50K+</code>, <code>10K+</code>, <code>50+</code> and <code>4.8★</code> are
-written into <code>templates/pages/custom/page/about.html</code> itself, not into the language file —
-searching <code>lang/en.json</code> for them will not find them. They are placeholder figures and
-none of them describes your store, so have your developer change them in the template
-before the page goes live.</p>
+<h3 id="statistics-value-cards-and-the-photo-since-1125">Statistics, value cards and the photo (since 1.1.25)<a class="headerlink" href="#statistics-value-cards-and-the-photo-since-1125" title="Permanent link">&para;</a></h3>
+<p>Open <strong>Storefront &gt; Themes &gt; Customize &gt; Ember Theme &gt; About page</strong>.</p>
+<p><strong>Stats</strong> and <strong>Values</strong> each have three choices:</p>
+<table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>What the page shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in text (translated)</td>
+<td>The theme's sample figures ("50K+ Happy Customers" and so on) and value cards, in the shopper's language. This is the default, and what earlier versions showed.</td>
+</tr>
+<tr>
+<td>Your text below</td>
+<td>The fields under it: a number and a label for each of the four stats, a title and a short text for each of the six cards. Leave a number or a title empty to hide that item; the rest close up. Leave all of them empty and the section is not shown.</td>
+</tr>
+<tr>
+<td>Hidden</td>
+<td>No stats section, or no values section.</td>
+</tr>
+</tbody>
+</table>
+<p>The sample figures do not describe your store, so before the page goes live either switch
+Stats to <strong>Your text below</strong> and enter figures that are true for you (for example <code>30</code> /
+<code>Days to return</code>, <code>Free</code> / <code>Shipping over $50</code>), or choose <strong>Hidden</strong>. The fields start filled
+with the sample text, so you only change what you need. Each field holds up to 64
+characters. Each card keeps its icon (target, tag, globe, headset, leaf, shield, in that
+order), so write the cards to fit them or leave the ones that do not fit empty.</p>
+<p>Text you enter is shown as written in every language. If your store serves several
+languages, the built-in choice is the one that is translated.</p>
+<p><strong>Story photo.</strong> By default the photo matches your theme style: a living room for the
+Home style, a clothes rail for Fashion and pantry jars for Food. To use your own:</p>
+<ol>
+<li>Upload the photo in <strong>Storefront &gt; Image Manager</strong>. A landscape photo of at least 1200 px
+   wide works best; it is shown about 16:9 and cropped to fill the frame.</li>
+<li>Enter its file name in <strong>Story photo (Image Manager file name)</strong>, for example
+   <code>about-us.jpg</code>. Pasting the image's path or URL from Image Manager also works.</li>
+<li>Describe the photo in <strong>Story photo description (alt text)</strong> for screen readers, or
+   leave it empty if the photo is only decoration.</li>
+</ol>
+<p>The theme serves the photo from the BigCommerce image CDN at the size each screen needs. A
+link to an image on another website is ignored and the default photo is shown instead.</p>
 <p>The store name is substituted automatically wherever it appears, so it stays correct if you
 rename the store.</p>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
@@ -1122,7 +1196,8 @@ change it</strong>. Read through it before the page goes live.</p>
   a visitor sees — change one and the other follows</li>
 </ul>
 <h2 id="editing-language-file-content">Editing language-file content<a class="headerlink" href="#editing-language-file-content" title="Permanent link">&para;</a></h2>
-<p>The About and FAQ pages both take their words from <code>lang/</code>, and each language has its own
+<p>The FAQ page, and the About page's headings, team and built-in statistics and value cards,
+take their words from <code>lang/</code>, and each language has its own
 complete copy: <code>lang/en.json</code>, <code>lang/de.json</code>, <code>lang/ja.json</code> and so on. Editing
 <code>lang/en.json</code> changes the English storefront and nothing else.</p>
 <p>If your store serves more than one language, every locale you have enabled needs the same
