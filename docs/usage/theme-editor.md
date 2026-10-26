@@ -219,9 +219,11 @@ Settings for the page that uses the **About** template (since 1.1.25).
 | **Story photo description (alt text)** | What a screen reader says for your photo. |
 | **Stats** | `Built-in text (translated)`, `Your text below` (the four number and label pairs) or `Hidden`. |
 | **Values** | The same three choices for the six value cards (title and text each). |
+| **Hero sentence and closing banner** | `Built-in text (translated)` or `Your text below`: **Hero sentence**, **Banner title**, **Banner text**, **Button label** and **Button link** (a page of your store, such as `/shop-all/`; since 1.1.26). |
 
 With **Your text below**, an empty number or title hides that item, and the section
-disappears when all of them are empty. Details and examples:
+disappears when all of them are empty; an empty hero sentence or banner field hides that piece.
+Details and examples:
 [The other page templates](page-templates.md#about).
 
 ## Payment icons

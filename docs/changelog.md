@@ -1,5 +1,31 @@
 # Release Notes
 
+## 1.1.26 — 26 October 2026
+
+New settings were added and none removed or renamed, so installing over 1.1.25 keeps your
+configuration. Out of the box the About page looks as it did; nothing changes until you choose
+your own text.
+
+### New
+
+#### Pages
+
+- **About page: your own hero sentence and closing banner.** In **Theme Editor > Ember Theme >
+  About page**, set **Hero sentence and closing banner** to **Your text below** to replace the
+  sentence under the page heading and the closing "Ready to Shop?" banner with your own title,
+  text and button. **Button link** takes a page of your store, such as `/shop-all/`; a link to
+  another website opens your category list instead. Leave a field empty to hide that piece. The
+  sample sentence promises shipping "everywhere", so change it if you ship to a few countries
+  only. See [About](usage/page-templates.md#hero-sentence-and-closing-banner-since-1126).
+
+### Fixes
+
+#### Home page
+
+- **The hero buttons no longer jump on phones while the page loads.** On screens narrower than
+  480px the two hero buttons are now always stacked, so they stay put when the store's font
+  arrives.
+
 ## 1.1.25 — 26 October 2026
 
 New settings were added and none removed or renamed, so installing over 1.1.24 keeps your

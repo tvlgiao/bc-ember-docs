@@ -12,9 +12,9 @@ the About page's Our Story section, below.
 
 ## About
 
-Choose the **About** template. The page has six parts: a heading with your store name, four
-statistics, Our Story (text and photo), six value cards, the team and a closing call to
-action.
+Choose the **About** template. The page has six parts: a heading with your store name and a
+sentence under it, four statistics, Our Story (text and photo), six value cards, the team and a
+closing call to action.
 
 !!! tip "Our Story is your own text"
     The **Our Story** section shows the text you write for the About Us page in
@@ -57,6 +57,25 @@ Home style, a clothes rail for Fashion and pantry jars for Food. To use your own
 The theme serves the photo from the BigCommerce image CDN at the size each screen needs. A
 link to an image on another website is ignored and the default photo is shown instead.
 
+### Hero sentence and closing banner (since 1.1.26)
+
+The sentence under the page heading ("We're on a mission to bring quality products to
+everyone, everywhere...") and the closing banner ("Ready to Shop?" with its **Shop Now**
+button) share one setting in the same group, **Hero sentence and closing banner**:
+
+| Choice | What the page shows |
+| --- | --- |
+| Built-in text (translated) | The theme's sample sentence and banner, in the shopper's language, with the button opening the store's category list (`/categories`). This is the default, and what earlier versions showed. |
+| Your text below | **Hero sentence**, **Banner title**, **Banner text**, **Button label** and **Button link**. Leave one empty to hide that piece; leave the banner's title, text and button label all empty to remove the banner. |
+
+**Button link** takes a page of your store: a path such as `/shop-all/` or `/sale/`, or the
+full address of a page on your store (starting with your store's own address, for example
+`https://yourstore.com/shop-all/`). A link to another website, or anything that is not a
+link, opens `/categories` instead. Each field holds up to 64 characters.
+
+The sample sentence speaks of shipping "everywhere"; if you ship to a few countries only,
+choose **Your text below** and write a sentence that is true for your store.
+
 The store name is substituted automatically wherever it appears, so it stays correct if you
 rename the store.
 
@@ -79,7 +98,8 @@ Two things follow from the content living in the language file:
 
 ## Editing language-file content
 
-The FAQ page, and the About page's headings, team and built-in statistics and value cards,
+The FAQ page, and the About page's headings, team and built-in statistics, value cards, hero
+sentence and closing banner,
 take their words from `lang/`, and each language has its own
 complete copy: `lang/en.json`, `lang/de.json`, `lang/ja.json` and so on. Editing
 `lang/en.json` changes the English storefront and nothing else.
