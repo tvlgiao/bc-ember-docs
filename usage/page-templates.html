@@ -1084,14 +1084,22 @@
 <p>Ember Theme ships four custom page layouts. The Lookbook is covered above; the other three
 work the same way — create a web page under <strong>Storefront → Web Pages</strong>, then pick the
 template from the dropdown on that page's edit screen.</p>
-<p>All three share one thing worth knowing before you start: <strong>what you type into the web
-page body is not what appears</strong>. Each template renders its own content, so the page you
-create supplies the URL and the template choice and nothing else. This is the same
-arrangement as the Lookbook, for the same reason — the layouts are designed, not free-form.</p>
+<p>All three share one thing worth knowing before you start: <strong>most of what you type into the
+web page body is not what appears</strong>. Each template renders its own content, so the page you
+create supplies the URL and the template choice. This is the same arrangement as the
+Lookbook, for the same reason — the layouts are designed, not free-form. The one exception is
+the About page's Our Story section, below.</p>
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
 <p>Choose the <strong>About</strong> template. Most of the content lives in the theme's language file
-rather than in theme settings: the headings, the story paragraphs, the value cards and the
-labels under the statistics all come from keys beginning <code>about.</code>.</p>
+rather than in theme settings: the headings, the value cards and the labels under the
+statistics all come from keys beginning <code>about.</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Our Story is your own text</p>
+<p>The <strong>Our Story</strong> section shows the text you write for the About Us page in
+<strong>Storefront &gt; Web Pages</strong> (since 1.1.24). With no text it keeps the built-in copy. Write a
+paragraph or two about your store; you can use headings, lists and links. The "Our Story"
+heading and the photo stay as they are.</p>
+</div>
 <p>The four statistic <strong>numbers</strong> are the exception. <code>50K+</code>, <code>10K+</code>, <code>50+</code> and <code>4.8★</code> are
 written into <code>templates/pages/custom/page/about.html</code> itself, not into the language file —
 searching <code>lang/en.json</code> for them will not find them. They are placeholder figures and
