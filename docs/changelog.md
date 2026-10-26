@@ -1,5 +1,21 @@
 # Release Notes
 
+## 1.1.22 — 26 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.21 keeps your configuration;
+there is nothing to configure.
+
+### Fixes
+
+#### Home page
+
+- **Meet the Makers shows every brand image whole, photos and logos alike (Food style):** in 1.1.21
+  a brand image saved as PNG, SVG, WebP or GIF was enlarged to fill its tile, so a brand photograph
+  saved as PNG was still cut at the top and bottom. Now every brand image, whatever its format, sits
+  whole and centred in its tile with the same even margin. If a logo has a wide empty margin of its
+  own and looks small, crop that margin from the image and upload it again in
+  **Products > Brands**.
+
 ## 1.1.21 — 25 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.20 keeps your configuration;
