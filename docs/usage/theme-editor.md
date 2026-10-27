@@ -122,9 +122,9 @@ All Categories panel.
 
 | Block | Controls |
 | --- | --- |
-| **Hero pills** | The three short notes under the hero buttons: `Built-in text (translated)`, `Your text below` (**Pill 1** to **Pill 3**; an empty pill is hidden) or `Hidden` (since 1.1.28) |
+| **Hero and footer pills** | The three short notes under the hero buttons and in the footer: `Built-in text (translated)`, `Your text below` (**Pill 1** to **Pill 3**; an empty pill is hidden) or `Hidden` (since 1.1.28; the footer follows it since 1.1.29) |
 | **Trust badges** | On/off, plus a title and a line of text for each of three badges |
-| **Promo banner** | On/off, one wide banner image, three supporting images, and an option to repeat the trust badges beneath |
+| **Promo banner** | On/off, one wide banner image, three supporting images, and an option to repeat the trust badges beneath; **Promo returns note** replaces the returns badge's note "Hassle free returns" (empty keeps it, since 1.1.29) |
 | **Flash sale** | On/off, source (Best Sellers, Featured, or New Arrivals), title, text, and an end date that drives the countdown |
 | **Reviews** | On/off, an aggregate score and count, and three named quotes |
 | **Newsletter** | On/off, title and text |
@@ -135,9 +135,11 @@ All Categories panel.
 
 The built-in pills read "Free shipping", "30-day returns" and "Secure checkout", in the
 shopper's language. If your store charges shipping on some or all orders, or has a different
-returns window, set **Hero pills** to `Your text below` and reword them (for example "Free
-shipping on many pieces"), or choose `Hidden`. The choice applies to every hero slide,
-including slides built from **Storefront > Carousel**. On phones the pills are not shown.
+returns window, set **Hero and footer pills** to `Your text below` and reword them (for example
+"Free shipping on many pieces"), or choose `Hidden`. The choice applies to every hero slide,
+including slides built from **Storefront > Carousel**, and to the three pills in the footer.
+On phones the hero pills are not shown. With `Your text below` or `Hidden`, the theme's own
+first hero slide (Home style) also drops its "fast shipping and hassle-free returns" line.
 
 ### Hero focus on phones and tablets
 
@@ -203,7 +205,7 @@ product page shows no share row.
 | Setting | Effect |
 | --- | --- |
 | **Free Shipping ($)** | The threshold the shipping progress bar counts toward: 25, 50, 75, 100, 150, or 200 |
-| **Free Shipping Messages** | Shows the free-shipping amount wherever the theme mentions it: the top bar's default first message, the cart sheet, the product page, the cart page (progress card and "Free ship" badge) and the note under **Free Shipping** in the home promo banner. Turn it off to hide all of them (called **Shipping Bar** before 1.1.27, when it hid only the cart page card) |
+| **Free Shipping Messages** | Shows the free-shipping amount wherever the theme mentions it: the top bar's default first message, the cart sheet, the product page, the cart page (progress card and "Free ship" badge) the note under **Free Shipping** in the home promo banner and the free-shipping perk on the Account created page (since 1.1.29). Turn it off to hide all of them (called **Shipping Bar** before 1.1.27, when it hid only the cart page card) |
 | **Cross-sell** | Shows related products in the cart |
 | **Trust Badges** | Shows the badges in the cart |
 | **Recently Viewed** | Shows a recently-viewed strip, with a configurable item count |

@@ -1,5 +1,37 @@
 # Release Notes
 
+## 1.1.29 — 27 October 2026
+
+One setting was added and none removed or renamed, so installing over 1.1.28 keeps your
+configuration. With the default settings every page shows the same text as before. One
+correction applies on upgrade: the Account created page now states your own **Free Shipping
+($)** amount instead of a fixed $50, and drops that line if **Free Shipping Messages** is off
+or the amount is 0.
+
+### Fixes
+
+#### Shipping and returns promises
+
+- **Footer pills follow the hero pills.** The three pills in the footer ("Free shipping",
+  "Secure checkout", "30-day returns") could not be changed. They now follow **Theme Editor >
+  Ember Theme > Homepage > Hero and footer pills** (formerly **Hero pills**): **Built-in text**
+  shows them as before, **Your text below** shows your **Pill 1** to **Pill 3** (an empty pill
+  is hidden), **Hidden** removes them. See [Hero pills](usage/theme-editor.md#hero-pills).
+- **Account created page: your own free-shipping amount.** The third perk said "Enjoy free
+  shipping on your first order over $50" whatever your store charges. It now states your
+  **Free Shipping ($)** amount, in the shopper's currency on a multi-currency store, and is left
+  out when **Free Shipping Messages** is off or the amount is 0, the same rule as the top bar
+  and the cart.
+- **First hero slide no longer promises shipping on its own.** The theme's own first slide
+  (classic look) said "... with fast shipping and hassle-free returns." When you choose **Your
+  text below** or **Hidden** for the pills, that slide now reads "Browse our curated
+  collection of trending products." With **Built-in text** it is unchanged. The Fashion and
+  Food slides never mentioned shipping.
+- **Promo banner returns note can be edited.** Under the home promo banner, the returns
+  badge's note "Hassle free returns" came from the language files. **Promo returns note**
+  (after **Promo Trust Badges**) replaces it with your own text; leave it empty to keep the
+  built-in note.
+
 ## 1.1.28 — 27 October 2026
 
 New settings were added and none removed or renamed, so installing over 1.1.27 keeps your
