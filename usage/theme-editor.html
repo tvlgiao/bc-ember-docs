@@ -1581,7 +1581,7 @@ All Categories panel.</p>
 <tbody>
 <tr>
 <td><strong>Hero and footer pills</strong></td>
-<td>The three short notes under the hero buttons and in the footer: <code>Built-in text (translated)</code>, <code>Your text below</code> (<strong>Pill 1</strong> to <strong>Pill 3</strong>; an empty pill is hidden) or <code>Hidden</code> (since 1.1.28; the footer follows it since 1.1.29)</td>
+<td>The three short notes under the hero buttons and in the footer: <code>Built-in text (translated)</code>, <code>Your text below</code> (<strong>Pill 1</strong> to <strong>Pill 3</strong>; an empty pill is hidden; <code>{amount}</code> shows your free-shipping amount, since 1.1.31) or <code>Hidden</code> (since 1.1.28; the footer follows it since 1.1.29, the cart page returns badge since 1.1.31)</td>
 </tr>
 <tr>
 <td><strong>Trust badges</strong></td>
@@ -1621,6 +1621,17 @@ returns window, set <strong>Hero and footer pills</strong> to <code>Your text be
 including slides built from <strong>Storefront &gt; Carousel</strong>, and to the three pills in the footer.
 On phones the hero pills are not shown. With <code>Your text below</code> or <code>Hidden</code>, the theme's own
 first hero slide (Home style) also drops its "fast shipping and hassle-free returns" line.</p>
+<p><strong>Your free-shipping amount in a pill (since 1.1.31).</strong> Type <code>{amount}</code> where the amount goes,
+for example <code>Free shipping over {amount}</code>. The pill then shows your <strong>Free Shipping ($)</strong>
+amount (Theme Editor &gt; Cart) in the shopper's currency, the same way the top bar's default
+message does: a shopper browsing in euros reads "Free shipping over €184", not "$200". While
+<strong>Free Shipping Messages</strong> is off, or the amount is 0, a pill containing <code>{amount}</code> is hidden.
+Type the amount yourself instead ("Free shipping over $150") and it stays in your store's
+currency for every shopper.</p>
+<p><strong>Pill 2 is also the cart page's returns badge (since 1.1.31).</strong> With <code>Built-in text</code> the cart
+page reads "30-day returns" as before. With <code>Your text below</code> it reads your <strong>Pill 2</strong>, so one
+edit changes the returns promise in the hero, the footer and the cart; an empty Pill 2 removes
+the badge. With <code>Hidden</code> the cart page shows no returns badge either.</p>
 <h3 id="hero-focus-on-phones-and-tablets">Hero focus on phones and tablets<a class="headerlink" href="#hero-focus-on-phones-and-tablets" title="Permanent link">&para;</a></h3>
 <p>The hero photographs are wide, and below 1100px the hero box is much narrower than the
 picture, so the photo is cropped to fill it. <strong>Hero 1 Focus</strong>, <strong>Hero 2 Focus</strong> and
@@ -1752,7 +1763,7 @@ product page shows no share row.</p>
 </tr>
 <tr>
 <td><strong>Trust Badges</strong></td>
-<td>Shows the badges in the cart</td>
+<td>Shows the badges in the cart: free shipping (with <strong>Free Shipping Messages</strong>), returns (follows <strong>Hero and footer pills</strong>, Pill 2, since 1.1.31) and secure checkout</td>
 </tr>
 <tr>
 <td><strong>Recently Viewed</strong></td>
