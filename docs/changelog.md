@@ -1,5 +1,21 @@
 # Release Notes
 
+## 1.1.30 — 27 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.29 keeps your
+configuration; there is nothing to configure.
+
+### Fixes
+
+#### Home page
+
+- **Promo banner badges stay lined up when Free Shipping Messages is off.** Under the home
+  promo banner, the shipping badge has no threshold note when **Free Shipping Messages** is off
+  or the amount is 0. The badges after it then slid one place, so a returns note sat beside the
+  wrong title and the next badge started a line late. Where the badges stack in rows, each badge
+  now starts its own row with its title and note beside its icon, whether or not the shipping
+  note shows.
+
 ## 1.1.29 — 27 October 2026
 
 One setting was added and none removed or renamed, so installing over 1.1.28 keeps your
