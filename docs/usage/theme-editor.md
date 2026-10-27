@@ -194,7 +194,7 @@ product page shows no share row.
 | Setting | Effect |
 | --- | --- |
 | **Free Shipping ($)** | The threshold the shipping progress bar counts toward: 25, 50, 75, 100, 150, or 200 |
-| **Shipping Bar** | Shows the progress bar |
+| **Free Shipping Messages** | Shows the free-shipping amount wherever the theme mentions it: the top bar's default first message, the cart sheet, the product page, the cart page (progress card and "Free ship" badge) and the note under **Free Shipping** in the home promo banner. Turn it off to hide all of them (called **Shipping Bar** before 1.1.27, when it hid only the cart page card) |
 | **Cross-sell** | Shows related products in the cart |
 | **Trust Badges** | Shows the badges in the cart |
 | **Recently Viewed** | Shows a recently-viewed strip, with a configurable item count |
@@ -205,6 +205,12 @@ Set the **Free Shipping** threshold to match the free-shipping rule you configur
 Below the threshold, the cart page, the cart sheet that opens after Add to Cart, and the
 product page all say how much is still missing — "Add $12.00 more for free shipping" —
 in the shopper's currency. Once the cart reaches it, the shipping row reads **FREE**.
+
+If your store ships free on every order, or has no free-shipping offer, turn **Free
+Shipping Messages** off (since 1.1.27). A **Free Shipping** amount of 0 is treated the same
+way. With the messages off and the first top-bar message left empty, the top bar starts
+with its second message; to say "Free shipping on every order" there, type it into the
+first top-bar message.
 
 The cross-sell row on the cart page leaves out products that are already in the cart. If
 that leaves fewer products than the row holds, it shows the ones that remain.

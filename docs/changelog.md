@@ -1,5 +1,24 @@
 # Release Notes
 
+## 1.1.27 — 27 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.26 keeps your configuration.
+Out of the box every page looks as it did; the free-shipping messages change only if you turn
+them off or set the amount to 0.
+
+### Fixes
+
+#### Cart and shipping
+
+- **Free-shipping messages can be turned off everywhere.** In **Theme Editor > Ember Theme >
+  Cart**, **Free Shipping Messages** (formerly **Shipping Bar**) now controls every place the
+  free-shipping amount appears: the top bar's default first message, the cart sheet, the
+  product page, the cart page (shipping card and the "Free ship" badge) and the "On orders
+  over" note in the home promo banner. Turn it off if your store ships free on every order, or
+  has no free-shipping offer. Your own first top-bar message is always shown; when it is empty
+  and the messages are off, the top bar starts with its second message. An amount of 0 is
+  treated the same way. See [Cart](usage/theme-editor.md#cart).
+
 ## 1.1.26 — 26 October 2026
 
 New settings were added and none removed or renamed, so installing over 1.1.25 keeps your

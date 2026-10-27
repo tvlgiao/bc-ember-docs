@@ -175,7 +175,7 @@ Carousel slides: while this is on and Storefront > Carousel has slides, the hero
 | Free Shipping ($) | `yen-cart-free-shipping-threshold` | select: $25, $50, $75, $100, $150, $200 |
 | Cross-sell | `yen-cart-show-crosssell` | checkbox |
 | Trust Badges | `yen-cart-show-trust-badges` | checkbox |
-| Shipping Bar | `yen-cart-show-shipping-progress` | checkbox |
+| Free Shipping Messages | `yen-cart-show-shipping-progress` | checkbox |
 | Recently Viewed | `yen-show-recently-viewed` | checkbox |
 | Recently Viewed Count | `yen-recently-viewed-count` | select: 3, 4, 6, 8, 10, 12 |
 
