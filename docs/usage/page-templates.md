@@ -81,15 +81,21 @@ rename the store.
 
 ## FAQ
 
-Choose the **FAQ** template. It renders thirteen questions grouped into five categories,
-with a search box and category filter that appear once the page loads.
+Choose the **FAQ** template. The page keeps its FAQ banner, with the page's name as the
+heading, and a "Still have questions?" card linking to your Contact Us page.
 
-The questions and answers are language-file content, under keys beginning `faq.`. The
-sample text describes a generic store — free shipping over a threshold, a thirty-day
-return window, a list of accepted cards — and **none of it is true of your store until you
-change it**. Read through it before the page goes live.
+**Write your own questions and answers in the page's content** (Storefront > Web Pages, the
+page's editor). Since 1.1.31 the page shows that content in the FAQ column: use a heading
+for each question and a paragraph or list for its answer. The sample questions, their search
+box, category filter and structured data are then left out.
 
-Two things follow from the content living in the language file:
+**With the content left empty**, the page shows thirteen sample questions grouped into five
+categories, with a search box and category filter that appear once the page loads. The
+sample questions and answers are language-file content, under keys beginning `faq.`. They
+describe a generic store — free shipping over a threshold, a thirty-day return window, a
+list of accepted cards — and **none of it is true of your store until you change it**.
+
+Two things follow from the sample content living in the language file:
 
 - the page is translated into all twenty languages the theme ships, so a shopper on a
   non-English storefront reads the FAQ in their own language
@@ -98,7 +104,7 @@ Two things follow from the content living in the language file:
 
 ## Editing language-file content
 
-The FAQ page, and the About page's headings, team and built-in statistics, value cards, hero
+The FAQ page's sample questions, and the About page's headings, team and built-in statistics, value cards, hero
 sentence and closing banner,
 take their words from `lang/`, and each language has its own
 complete copy: `lang/en.json`, `lang/de.json`, `lang/ja.json` and so on. Editing

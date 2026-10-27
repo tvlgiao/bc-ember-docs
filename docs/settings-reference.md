@@ -100,7 +100,7 @@ from the theme's language files.
 | Hero 3 Focus (phones & tablets) | `yen-hero-3-focus` | select: 0% (left), 10%, 20%, 30%, 40%, 50% (centre), 60%, 70%, 80%, 90%, 100% (right) |
 | Hero and footer pills | `yen-hero-pills` | select: Built-in text (translated), Your text below, Hidden |
 | Pill 1 | `yen-hero-pill-1` | input |
-| Pill 2 | `yen-hero-pill-2` | input |
+| Pill 2 (also the cart page returns badge) | `yen-hero-pill-2` | input |
 | Pill 3 | `yen-hero-pill-3` | input |
 | Trust Badges | `yen-show-trust-badges` | checkbox |
 | Badge 1 Title | `yen-trust-shipping-title` | input |
@@ -117,7 +117,7 @@ from the theme's language files.
 
 Carousel slides: while this is on and Storefront > Carousel has slides, the hero is built from them, and widgets in the hero Page Builder regions home_hero_slide_1 to home_hero_slide_3 are not shown.
 
-Hero and footer pills: the three short notes under the hero buttons and in the footer (Free shipping, 30-day returns, Secure checkout). With Your text below, an empty pill is hidden. With Your text or Hidden, the first built-in hero slide also drops its line about shipping and returns.
+Hero and footer pills: the three short notes under the hero buttons and in the footer (Free shipping, 30-day returns, Secure checkout). With Your text below, an empty pill is hidden. {amount} in a pill shows the Free Shipping ($) threshold in the shopper's currency; that pill is hidden while Free Shipping Messages is off. Pill 2 is also the cart page returns badge, which Hidden removes. With Your text or Hidden, the first built-in hero slide also drops its line about shipping and returns.
 
 ### Flash Sale
 

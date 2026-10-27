@@ -1,5 +1,40 @@
 # Release Notes
 
+## 1.1.31 — 28 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.30 keeps your
+configuration. With the default settings every page shows the same as before. Two help
+texts in **Theme Editor > Ember Theme > Homepage** are updated: the **Hero and footer pills**
+note and the **Pill 2** label.
+
+### Fixes
+
+#### FAQ page
+
+- **The FAQ template shows your own questions and answers.** A Web Page using the **FAQ**
+  template always showed the thirteen sample questions, whatever you wrote in the page. The
+  text you write in the page (**Storefront > Web Pages**) now appears under the FAQ banner,
+  which takes the page's name as its heading; the sample questions, their search box,
+  category filter and search-engine data are left out. A page with no text still shows the
+  samples, as before. See [Page templates](usage/page-templates.md#faq).
+
+#### Cart page
+
+- **The returns badge follows your returns pill.** The "30-day returns" badge in the cart
+  page's trust row could not be changed. It now follows **Hero and footer pills**: with
+  **Built-in text** it reads "30-day returns" as before; with **Your text below** it reads
+  your **Pill 2**, so one edit changes the returns promise in the hero, the footer and the
+  cart; an empty **Pill 2**, or **Hidden**, removes the badge and the row closes up.
+
+#### Home page and footer
+
+- **Your free-shipping amount in your own pills, in the shopper's currency.** An amount
+  typed into a pill ("Free shipping over $150") showed $150 to a shopper browsing in euros.
+  Type `{amount}` instead ("Free shipping over {amount}"): the pill shows your **Free
+  Shipping ($)** amount, converted to the shopper's currency like the top bar's default
+  message. While **Free Shipping Messages** is off or the amount is 0, a pill containing
+  `{amount}` is hidden. See [Hero pills](usage/theme-editor.md#hero-pills).
+
 ## 1.1.30 — 27 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.29 keeps your
