@@ -122,6 +122,7 @@ All Categories panel.
 
 | Block | Controls |
 | --- | --- |
+| **Hero pills** | The three short notes under the hero buttons: `Built-in text (translated)`, `Your text below` (**Pill 1** to **Pill 3**; an empty pill is hidden) or `Hidden` (since 1.1.28) |
 | **Trust badges** | On/off, plus a title and a line of text for each of three badges |
 | **Promo banner** | On/off, one wide banner image, three supporting images, and an option to repeat the trust badges beneath |
 | **Flash sale** | On/off, source (Best Sellers, Featured, or New Arrivals), title, text, and an end date that drives the countdown |
@@ -129,6 +130,14 @@ All Categories panel.
 | **Newsletter** | On/off, title and text |
 | **Brand story** | On/off |
 | **Press bar** | On/off, a title, and five logo-plus-link slots |
+
+### Hero pills
+
+The built-in pills read "Free shipping", "30-day returns" and "Secure checkout", in the
+shopper's language. If your store charges shipping on some or all orders, or has a different
+returns window, set **Hero pills** to `Your text below` and reword them (for example "Free
+shipping on many pieces"), or choose `Hidden`. The choice applies to every hero slide,
+including slides built from **Storefront > Carousel**. On phones the pills are not shown.
 
 ### Hero focus on phones and tablets
 

@@ -1,5 +1,34 @@
 # Release Notes
 
+## 1.1.28 — 27 October 2026
+
+New settings were added and none removed or renamed, so installing over 1.1.27 keeps your
+configuration. Out of the box the home page hero shows the same three pills as before;
+nothing changes until you choose your own text.
+
+### New
+
+#### Home page
+
+- **Hero pills: your own text, or none.** In **Theme Editor > Ember Theme > Homepage**,
+  **Hero pills** controls the three short notes under the hero buttons ("Free shipping",
+  "30-day returns", "Secure checkout"). Choose **Your text below** to reword them in **Pill 1**
+  to **Pill 3** (leave a pill empty to hide it), or **Hidden** to remove them. If your store
+  charges shipping on some or all orders, change or hide the "Free shipping" pill. The same
+  choice applies when the hero is built from your Control Panel carousel slides. See
+  [Hero pills](usage/theme-editor.md#hero-pills).
+
+### Fixes
+
+#### Blog
+
+- **Blog cards line up.** On the blog page and in the home page blog section, a post's tag
+  now sits on the top-left corner of its photo instead of above the title, so every card's
+  title starts at the same height. The author and date row and "Read more" sit at the bottom
+  of each card, so a short excerpt no longer leaves them floating. A post without a thumbnail
+  shows a soft placeholder in your accent colour, in the same frame as a photo, instead of an
+  empty box; the featured post at the top of the blog page does the same.
+
 ## 1.1.27 — 27 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.26 keeps your configuration.
