@@ -262,7 +262,7 @@ hover always fills the card.
 | Setting | Effect |
 | --- | --- |
 | **Free Shipping ($)** | The threshold the shipping progress bar counts toward: 25, 50, 75, 100, 150, or 200 |
-| **Free Shipping Messages** | Shows the free-shipping amount wherever the theme mentions it: the top bar's default first message, the cart sheet, the product page, the cart page (progress card and "Free ship" badge) the note under **Free Shipping** in the home promo banner and the free-shipping perk on the Account created page (since 1.1.29). Turn it off to hide all of them (called **Shipping Bar** before 1.1.27, when it hid only the cart page card) |
+| **Free Shipping Messages** | Shows the free-shipping amount wherever the theme mentions it: the top bar's default first message, the cart sheet, the product page, the cart page (progress card and "Free ship" badge) the note under **Free Shipping** in the home promo banner and the free-shipping perk on the Account created page (since 1.1.29). Turn it off to hide all of them (called **Shipping Bar** before 1.1.27, when it hid only the cart page card). Off by default since 1.1.34: turn it on once your shipping rules offer free shipping over an amount |
 | **Cross-sell** | Shows related products in the cart |
 | **Trust Badges** | Shows the badges in the cart: free shipping (with **Free Shipping Messages**), returns (follows **Hero and footer pills**, Pill 2, since 1.1.31) and secure checkout |
 | **Recently Viewed** | Shows a recently-viewed strip, with a configurable item count |
@@ -291,8 +291,8 @@ Settings for the page that uses the **About** template (since 1.1.25).
 | --- | --- |
 | **Story photo (Image Manager file name)** | Your own Our Story photo: the file name of an image uploaded in **Storefront > Image Manager**. Empty: the theme's photo for your style. |
 | **Story photo description (alt text)** | What a screen reader says for your photo. |
-| **Stats** | `Built-in text (translated)`, `Your text below` (the four number and label pairs) or `Hidden`. |
-| **Values** | The same three choices for the six value cards (title and text each). |
+| **Stats** | `Built-in text (translated)`, `Your text below` (the four number and label pairs) or `Hidden` (the default since 1.1.34, so a new store shows no figures it has not typed). |
+| **Values** | The same three choices for the six value cards (title and text each); `Hidden` by default since 1.1.34. |
 | **Hero sentence and closing banner** | `Built-in text (translated)` or `Your text below`: **Hero sentence**, **Banner title**, **Banner text**, **Button label** and **Button link** (a page of your store, such as `/shop-all/`; since 1.1.26). |
 
 With **Your text below**, an empty number or title hides that item, and the section

@@ -1,5 +1,68 @@
 # Release Notes
 
+## 1.1.34 — 28 October 2026
+
+No Theme Editor setting was added, removed or renamed. The theme now shows only what your
+store's own data backs: out of the box it shows no sample content and makes no shipping
+promise. To get there some defaults changed (free-shipping messages, testimonials, About
+page figures and values, Lookbook products and links). Settings you have already saved in
+Theme Editor keep your values.
+
+### Fixes
+
+#### Home, About and FAQ pages
+
+- **No shipping promise you did not make.** The free-shipping progress messages are off by
+  default, so the top bar, product page, cart, hero pills and footer no longer promise free
+  shipping over an amount your store never set. Turn the messages on and set your threshold
+  in Theme Editor > Cart when your shipping rules offer it. The shipping trust tile now
+  reads "Shipping Options".
+- **No sample content by default.** Testimonials, the About page team, figures and values,
+  and the brand story figures no longer appear with made-up names and numbers; each shows
+  once you fill it in. The FAQ page no longer tells search engines about its sample answers,
+  and the About page's built-in sentences no longer mention fast shipping or "thousands of
+  products".
+- **Home sections follow your products.** Flash Sale lists only products that really have a
+  discount (and hides when none do); the promo banner button opens your Sale category, or no
+  button shows; the classic hero without your own slides shows one general slide; the blog
+  button shows only when your store has a blog; Recently Viewed follows its setting and
+  count.
+
+#### Cart, drawer and product page
+
+- **Totals you can trust.** The cart drawer total now matches the cart page (gift wrapping
+  and tax included), and neither shows "FREE" shipping or "You've unlocked free shipping"
+  while BigCommerce says the order still needs to qualify.
+- **Out-of-stock choices can't be bought.** When the chosen options are out of stock, Buy
+  Now, the sticky Add to Cart and the free-shipping note step aside with Add to Cart, and
+  the "In stock" label turns to "Out of stock".
+- **No invented delivery date.** The "Get it by ..." line, which no store data backed, is
+  gone.
+- The buying column stays beside a long description on desktop, the sticky bar shows the
+  price once, and a product with no reviews says so above Write a Review.
+
+#### Product cards, quick view, compare and wishlist
+
+- **"Hide prices from guests" and "Show product rating" are respected on every card.** With
+  prices hidden, guests see "Log in for pricing" instead of an empty price row; with ratings
+  off, cards show no stars.
+- Quick view: a price range only when it has both ends, whole photos on the card's own
+  background in dark mode, and room around the options and buttons.
+- Cards: "On Sale!" for any real discount, "Sold Out" links to the product instead of a
+  Notify Me button that did nothing, and titles line up when only some products have a
+  brand.
+- Compare: no "Best Value" tag the data did not back, and availability matches the cards.
+  Wishlist and compare photos show whole.
+
+#### Navigation and listings for small stores
+
+- The Shop menu panel drops when it would only repeat a single category; the Brands link
+  hides when the store has no brands, and appears in the phone menu.
+- Category filters: the first four groups open, the rest collapsed; Clear shows only while a
+  filter is on; a search with no results has no filter column.
+- Blog with no posts shows an empty message; a Lookbook look whose products cannot load says
+  so.
+
 ## 1.1.33 — 28 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.32 keeps your

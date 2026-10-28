@@ -25,7 +25,7 @@ All four looks take the same six fields. Using Look 1 as the example:
 | **Look 1 Title** | The heading for the scene |
 | **Look 1 Text** | A sentence or two beneath it |
 | **Look 1 Image** | The scene photograph |
-| **Look 1 IDs** | Product IDs, comma separated: `113, 115, 117` |
+| **Look 1 IDs** | Product IDs, comma separated: `113, 115, 117` (empty by default since 1.1.34) |
 | **Look 1 View All URL** | Where "View all" links to — usually a category |
 | **Look 1 Hotspots** | Dot positions, see below |
 
