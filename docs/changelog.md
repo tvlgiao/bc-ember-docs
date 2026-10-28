@@ -1,5 +1,55 @@
 # Release Notes
 
+## 1.1.32 — 28 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.31 keeps your
+configuration. Stores whose product photos are the shape of the card (square, or 3:4 on the
+Fashion style) see the same cards as before.
+
+### Fixes
+
+#### Product cards
+
+- **The whole photo, never cropped.** A product photo of another shape than the card (a wide
+  sofa in a square card) lost its sides. Cards on category, search and brand pages, the home
+  page rows and carousels, and Recently Viewed now show the whole photo on the card's light
+  ground. Square photos (or 3:4 photos on the Fashion style) fill the card as before; the
+  second photo shown on hover still fills it.
+
+#### Product page
+
+- **No empty space under the photo.** A product with many options made a tall buying column,
+  and the description tabs started only where it ended, leaving a large gap under the photo
+  and another under the tabs. The tabs and videos now follow the photo directly. Phones are
+  unchanged: photo, buying column, then tabs.
+- **Hidden "__" custom fields.** Custom fields whose name starts with two underscores
+  (`__`), as used by apps and for settings, no longer appear in the Specifications tab or
+  the compare page. Name a field that way to keep it off the storefront. See
+  [Product pages](usage/theme-editor.md#product-pages).
+- **Long specification values stay in their column.** A long value such as a web address
+  wraps inside its own cell instead of running over the next specification.
+- **The reviews count matches the reviews shown.** The Reviews tab, the "N reviews" link and
+  the review summary count the reviews the tab lists. BigCommerce can count reviews it does
+  not show (for example reviews not approved for this storefront), which made "Reviews (6)"
+  open an empty tab.
+- **Recently Viewed matches Related Products.** The Recently Viewed row uses the same card
+  size, columns and type as Related Products (four across from tablets up). The home page's
+  Recently Viewed row is unchanged.
+- **Buttons in your description respond to the pointer.** Links styled as theme buttons
+  (class `button`) in a product description or warranty fill with your accent tint on hover,
+  like the product page's own buttons.
+
+#### Blog
+
+- **"← Blog" goes back to the blog.** The link under a blog post reloaded the post instead
+  of opening the blog. It now opens your blog's own address on each storefront.
+
+#### Menu
+
+- **Shop menu tiles in your colours.** A category tile without an image in the Shop menu
+  showed an orange tint on hover with the Fashion and Food styles; it now uses your accent
+  colour, and the tile name has more room underneath.
+
 ## 1.1.31 — 28 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.30 keeps your

@@ -213,6 +213,33 @@ The share buttons under the product follow the social sharing buttons ticked in 
 panel, in the same order, including Print and the Facebook Like button. Untick them all and the
 product page shows no share row.
 
+**Specifications.** The Specifications tab lists the product's custom fields
+(**Products > Edit > Custom Fields**), with weight and dimensions when the store shows them.
+Two kinds of field are left out, here and on the compare page:
+
+- a field whose name starts with two underscores (`__`), such as `__CHASSIS NUMBERS` or
+  `__@RENAME RAM`. Apps and merchants use this convention for settings that are not product
+  facts; name a field this way to keep it off the storefront;
+- `yen_badge`, which sets the card badge (new, sale, sold out), and fields whose value is
+  empty or a dash.
+
+A long value, such as a web address, wraps inside its own column.
+
+**Reviews.** The Reviews tab, the "N reviews" link beside the stars and the review summary
+count the reviews the tab lists. If BigCommerce counts reviews it does not list on this
+storefront (for example reviews not yet approved), the stars still follow BigCommerce's
+rating, but the tab shows no count and the link is left out until a review can be listed.
+
+**Buttons in your description.** Links you give the class `button` in a product description
+or warranty (Cornerstone's button style) take the theme's button look and fill with your
+accent tint on hover.
+
+**Product photos on cards.** Product cards show the whole photo, centred on the card's light
+ground. A photo the shape of the card (square, or 3:4 with the Fashion style) fills it; a
+wider or taller one is not cropped and leaves even bands. For the fullest cards, upload
+square photos (3:4 with the Fashion style), at least 1000px wide. The second photo shown on
+hover always fills the card.
+
 ## Cart
 
 | Setting | Effect |

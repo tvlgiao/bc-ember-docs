@@ -35,3 +35,12 @@ from guests, and the theme leaves prices out of the page and its structured data
 **A homepage section will not appear.** Most sections have an on/off checkbox in
 **Theme Editor → Ember Theme**, and several also hide themselves when their content fields
 are empty.
+
+**A blog post's photo looks blurry.** The theme asks BigCommerce for the photo up to 1280px
+wide, but BigCommerce never makes a photo larger than the file you uploaded: a 200px
+thumbnail is stretched across the 800px banner. Upload the post's thumbnail
+(**Storefront → Blog → edit the post**) at least 1600px wide.
+
+**A button in my product description does not change on hover.** The theme styles links
+with the class `button` (and `button` plus a class of your own). A link styled entirely by
+your own CSS keeps the hover you give it.
