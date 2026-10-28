@@ -131,6 +131,23 @@ All Categories panel.
 | **Brand story** | On/off |
 | **Press bar** | On/off, a title, and five logo-plus-link slots |
 
+### "View all" links (since 1.1.33)
+
+Each product section on the home page (the Featured / Best Sellers / New Arrivals tabs or
+shelves, and the Flash Sale) ends with a "View all" link when your store has somewhere to send
+it. The theme looks, in this order, for:
+
+1. a category named for the section: **Featured**, **Best Sellers**, **New Arrivals**, or
+   **Sale** for the Flash Sale;
+2. a category named **Shop All**, opened sorted to match the section (featured, best selling
+   or newest; the Flash Sale follows its source);
+3. a top-level category whose name starts with "Shop All", in any case (for example
+   "Shop All Store 2"), sorted the same way;
+4. your only top-level category, if the store has just one, sorted the same way.
+
+With none of these the section shows no link. To choose where a section's link goes, give a
+top-level category that section's name.
+
 ### Hero pills
 
 The built-in pills read "Free shipping", "30-day returns" and "Secure checkout", in the

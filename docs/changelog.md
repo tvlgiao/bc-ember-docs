@@ -1,5 +1,24 @@
 # Release Notes
 
+## 1.1.33 — 28 October 2026
+
+No setting was added, removed or renamed, so installing over 1.1.32 keeps your
+configuration.
+
+### Fixes
+
+#### Home page
+
+- **"View all" links on every product section.** Flash Sale, New Arrivals, Best Sellers and
+  the "Our Products" tabs showed a "View all" link only when your store had a category named
+  exactly like the demo stores ("Sale", "New Arrivals", "Best Sellers", "Featured" or "Shop
+  All"). When a section has no category of its own, its "View all" now opens your store-wide
+  category, sorted to match the section (newest, best selling or featured): a category named
+  "Shop All", or one whose name starts with "Shop All" (such as "Shop All Store 2"), or your
+  only top-level category if you have just one. A store with none of these shows no link, as
+  before. A category named like the section still comes first.
+  See [Homepage](usage/theme-editor.md#view-all-links-since-1133).
+
 ## 1.1.32 — 28 October 2026
 
 No setting was added, removed or renamed, so installing over 1.1.31 keeps your
