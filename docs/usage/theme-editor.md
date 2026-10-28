@@ -124,8 +124,8 @@ All Categories panel.
 | --- | --- |
 | **Hero and footer pills** | The three short notes under the hero buttons and in the footer: `Built-in text (translated)`, `Your text below` (**Pill 1** to **Pill 3**; an empty pill is hidden; `{amount}` shows your free-shipping amount, since 1.1.31) or `Hidden` (since 1.1.28; the footer follows it since 1.1.29, the cart page returns badge since 1.1.31) |
 | **Trust badges** | On/off, plus a title and a line of text for each of three badges |
-| **Promo banner** | On/off, one wide banner image, three supporting images, and an option to repeat the trust badges beneath; **Promo returns note** replaces the returns badge's note "Hassle free returns" (empty keeps it, since 1.1.29) |
-| **Flash sale** | On/off, source (Best Sellers, Featured, or New Arrivals), title, text, and an end date that drives the countdown |
+| **Promo banner** | On/off, one wide banner image, three supporting images, and an option to repeat the trust badges beneath; **Promo returns note** replaces the returns badge's note "Hassle free returns" (empty keeps it, since 1.1.29). Since 1.1.35 the banner shows only when it has somewhere to go: its link setting, or a top-level category named "Sale" |
+| **Flash sale** | On/off, source (Best Sellers, Featured, or New Arrivals), title, text, and an end date that drives the countdown. The end date is empty by default since 1.1.35: no countdown and no "Hurry up" line until you set one |
 | **Reviews** | On/off, an aggregate score and count, and three named quotes |
 | **Newsletter** | On/off, title and text |
 | **Brand story** | On/off |
@@ -150,10 +150,11 @@ top-level category that section's name.
 
 ### Hero pills
 
-The built-in pills read "Free shipping", "30-day returns" and "Secure checkout", in the
-shopper's language. If your store charges shipping on some or all orders, or has a different
-returns window, set **Hero and footer pills** to `Your text below` and reword them (for example
-"Free shipping on many pieces"), or choose `Hidden`. The choice applies to every hero slide,
+The built-in pills read "Free shipping" (only while **Free Shipping Messages** is on with an
+amount) and "Secure checkout", in the shopper's language. Since 1.1.35 there is no built-in
+returns pill: the theme cannot know your returns policy. To state one, or if your store charges
+shipping on some or all orders, set **Hero and footer pills** to `Your text below` and write
+them (for example "Free shipping on many pieces", "30-day returns"), or choose `Hidden`. The choice applies to every hero slide,
 including slides built from **Storefront > Carousel**, and to the three pills in the footer.
 On phones the hero pills are not shown. With `Your text below` or `Hidden`, the theme's own
 first hero slide (Home style) also drops its "fast shipping and hassle-free returns" line.
@@ -166,10 +167,11 @@ message does: a shopper browsing in euros reads "Free shipping over €184", not
 Type the amount yourself instead ("Free shipping over $150") and it stays in your store's
 currency for every shopper.
 
-**Pill 2 is also the cart page's returns badge (since 1.1.31).** With `Built-in text` the cart
-page reads "30-day returns" as before. With `Your text below` it reads your **Pill 2**, so one
-edit changes the returns promise in the hero, the footer and the cart; an empty Pill 2 removes
-the badge. With `Hidden` the cart page shows no returns badge either.
+**Pill 2 is your returns promise (since 1.1.31).** With `Your text below` the cart page's returns
+badge reads your **Pill 2**, so one edit changes the returns promise in the hero, the footer and
+the cart; the home trust badges, the promo banner row and the product page's "Easy Returns" line
+show only while Pill 2 does (since 1.1.35). Pill 2 is empty by default, and `Built-in text` and
+`Hidden` show no returns badge or line.
 
 ### Hero focus on phones and tablets
 

@@ -1,5 +1,42 @@
 # Release Notes
 
+## 1.1.35 — 28 October 2026
+
+No Theme Editor setting was added, removed or renamed. The theme keeps showing only what your
+store's own data backs: a few more defaults that promised a returns policy, a sale deadline or
+member perks now ship empty. Settings you have already saved in Theme Editor keep your values.
+
+### Fixes
+
+#### Home page and promises
+
+- **No returns promise you did not make.** The top bar, hero and footer pills, cart trust
+  badges, home trust rows and the product page trust list no longer say "30-day returns" by
+  default. To show your own returns policy, set Hero pills to Your text and fill in Pill 2 (and
+  the top bar message 2) in Theme Editor.
+- **Sale banner only when there is a sale.** The promo banner (and the Food style's deal tile)
+  shows when you set its link or your store has a "Sale" category; otherwise it stays hidden
+  instead of sending shoppers to all products.
+- **Flash Sale countdown only with your date.** There is no default end date any more, so the
+  countdown and "Hurry up" line appear only once you set Flash Sale End Date.
+- The home newsletter text no longer promises early access or members-only discounts; your
+  own newsletter text still takes its place.
+- Trust badges fill the row whatever their number; a short Shop by Category row starts under
+  its heading; Recently Viewed prices line up; on phones the product tabs stay on one line.
+
+#### Product cards, product page and compare
+
+- **No "Add to Cart" on products you do not sell online.** A product with purchasing disabled
+  or a hidden price shows "View details" on cards and in the wishlist.
+- **Stock label tells the truth.** A product with stock that cannot be bought online shows no
+  stock label instead of "Out of stock"; an empty "Current Stock:" line is gone.
+- Sold out cards use a crossed-circle icon instead of a notification bell.
+- Compare shows "In stock" (or "Pre-order") for products you sell without stock tracking,
+  instead of "N/A".
+- Fashion style: option buttons keep your text's capitals ("Intel Core i5"), and the product
+  photo area in dark mode is no longer a bright white block.
+- On phones the menu button sits a little further from the logo.
+
 ## 1.1.34 — 28 October 2026
 
 No Theme Editor setting was added, removed or renamed. The theme now shows only what your
