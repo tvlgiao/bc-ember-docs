@@ -1740,6 +1740,29 @@ store without product filtering shows a compact Shop By Price block instead.</p>
 <p>The share buttons under the product follow the social sharing buttons ticked in the control
 panel, in the same order, including Print and the Facebook Like button. Untick them all and the
 product page shows no share row.</p>
+<p><strong>Specifications.</strong> The Specifications tab lists the product's custom fields
+(<strong>Products &gt; Edit &gt; Custom Fields</strong>), with weight and dimensions when the store shows them.
+Two kinds of field are left out, here and on the compare page:</p>
+<ul>
+<li>a field whose name starts with two underscores (<code>__</code>), such as <code>__CHASSIS NUMBERS</code> or
+  <code>__@RENAME RAM</code>. Apps and merchants use this convention for settings that are not product
+  facts; name a field this way to keep it off the storefront;</li>
+<li><code>yen_badge</code>, which sets the card badge (new, sale, sold out), and fields whose value is
+  empty or a dash.</li>
+</ul>
+<p>A long value, such as a web address, wraps inside its own column.</p>
+<p><strong>Reviews.</strong> The Reviews tab, the "N reviews" link beside the stars and the review summary
+count the reviews the tab lists. If BigCommerce counts reviews it does not list on this
+storefront (for example reviews not yet approved), the stars still follow BigCommerce's
+rating, but the tab shows no count and the link is left out until a review can be listed.</p>
+<p><strong>Buttons in your description.</strong> Links you give the class <code>button</code> in a product description
+or warranty (Cornerstone's button style) take the theme's button look and fill with your
+accent tint on hover.</p>
+<p><strong>Product photos on cards.</strong> Product cards show the whole photo, centred on the card's light
+ground. A photo the shape of the card (square, or 3:4 with the Fashion style) fills it; a
+wider or taller one is not cropped and leaves even bands. For the fullest cards, upload
+square photos (3:4 with the Fashion style), at least 1000px wide. The second photo shown on
+hover always fills the card.</p>
 <h2 id="cart">Cart<a class="headerlink" href="#cart" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
