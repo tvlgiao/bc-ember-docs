@@ -1,5 +1,15 @@
 # Release Notes
 
+## 1.1.41 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **No grey page while the next page of products loads.** Next, Previous or a filter on a
+  category page greyed most of the page and left a white band above the footer until the
+  products arrived. Only the filter list now takes a light veil while it reloads.
+
 ## 1.1.40 — 29 October 2026
 
 No Theme Editor setting was added, removed or renamed.
