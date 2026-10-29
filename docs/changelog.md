@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.1.40 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Product photos fill the frame again.** 1.1.39 showed every product page photo whole,
+  which left empty bands beside photos a little narrower than the frame (every Fashion photo,
+  and tall lifestyle shots on Home). The photo now fills the frame; only one much wider or
+  taller than the frame (more than one and a half times, such as a banner-shaped photo) is
+  shown whole. Thumbnails fill their tiles.
+- Fashion style: the product photo frame is 3:4, the shape of the Fashion photos and product
+  cards, so they show uncropped.
+
 ## 1.1.39 — 29 October 2026
 
 No Theme Editor setting was added, removed or renamed.
