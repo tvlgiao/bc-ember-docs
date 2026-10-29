@@ -1,5 +1,16 @@
 # Release Notes
 
+## 1.1.38 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **One ring round the chosen colour.** On the product page the selected colour swatch showed
+  three circles (a thin dark ring, the accent border and a faint glow under the pointer). It now
+  shows one accent ring with a small gap, as in Quick View; hovering another swatch only tints
+  its border.
+
 ## 1.1.37 — 29 October 2026
 
 No Theme Editor setting was added, removed or renamed. One style default changed: the Fashion
