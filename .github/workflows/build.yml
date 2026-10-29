@@ -34,8 +34,8 @@ jobs:
       #  - the page body a merchant types is ignored by all four, which looks like a bug
       #  - Track Order has no lookup form because BigCommerce offers no endpoint for one,
       #    not because it is unfinished
-      #  - the About statistics are template literals, so a merchant told to edit the
-      #    language file searches it for "50K+" and finds nothing
+      #  - the About statistics ship as sample figures ("50K+ Happy Customers") until a
+      #    merchant switches them to their own text or hides them
       #  - editing lang/en.json changes English alone
       #  - a primary button control left at #1B1D21 / #333333 / #000000 counts as not set, so
       #    choosing exactly that colour changes nothing
@@ -61,8 +61,8 @@ jobs:
               'Track Order',
               'what you type into the web page body is not what appears',
               'no storefront endpoint a theme can query',
-              'not into the language file',
-              'templates/pages/custom/page/about.html',
+              'The sample figures do not describe your store',
+              'Your text below',
               'every locale you have enabled needs the same edit',
               'is treated as untouched',
               'select your font again',
