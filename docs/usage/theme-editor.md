@@ -201,7 +201,7 @@ picks how:
 | Option | Effect |
 | --- | --- |
 | **Banner: photo behind the title** (default) | The photo fills the header and the breadcrumb, title and description sit on it, over a shade that keeps the text readable |
-| **Split: title beside the whole photo** | The title and description sit beside the image, which is shown whole (the Fashion style starts on Split) |
+| **Split: title beside the whole photo** | The title and description sit beside the image, which is shown whole (before 1.1.37 the Fashion style started on Split; every style now starts on Banner) |
 
 With **Split**:
 

@@ -1,5 +1,29 @@
 # Release Notes
 
+## 1.1.37 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed. One style default changed: the Fashion
+style now opens category pages with the photo banner (Category header style: Banner), like
+Home and Food. Pick Split in Theme Editor to keep the photo beside the title.
+
+### Fixes
+
+- Food style: the trust strip under the hero shows each label above its text, so the three
+  claims line up even when one text runs to two lines.
+- Fashion style: category banner photos are cropped from nearer the top, keeping collars and
+  handles in view.
+
+## 1.1.36 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Product details stay put when an option is picked.** The SKU (and UPC) now sit on their
+  own line, so choosing a colour or size that changes the SKU no longer pushes Weight sideways.
+- Fashion style: the hero button labels and arrows sit in the middle of their buttons (they
+  rode a few pixels high).
+
 ## 1.1.35 — 28 October 2026
 
 No Theme Editor setting was added, removed or renamed. The theme keeps showing only what your
