@@ -1,5 +1,20 @@
 # Release Notes
 
+## 1.1.39 — 29 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Whole product photo on the product page.** Photos that are not square (wide shots, tall
+  bottles) are fitted inside the gallery frame instead of cropped to a square, in the main
+  image and the thumbnails.
+- **Add to Cart says Sold Out for a sold-out choice.** Picking an option that is out of stock
+  turns the button label to Sold Out; picking an in-stock option brings the label back.
+- **Gift wrapping line reads as information.** "Gift wrapping: Options available" is plain
+  text, as in Cornerstone, instead of a label that looked like an option to click; the wrap is
+  still chosen in the cart.
+
 ## 1.1.38 — 29 October 2026
 
 No Theme Editor setting was added, removed or renamed.
