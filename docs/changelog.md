@@ -1,5 +1,17 @@
 # Release Notes
 
+## 1.1.44 — 30 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Product card prices stay put.** The colour dots on product cards now load before the
+  card scrolls into view, so the price and button no longer jump down as you scroll.
+- **Footer at the bottom of short pages.** On a tall screen, short pages (sitemap, brands,
+  compare) now reach the bottom of the window instead of leaving a blank band under the
+  footer.
+
 ## 1.1.43 — 30 October 2026
 
 ### New
