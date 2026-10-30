@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.1.42 — 30 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Sharp photos in the Categories menu, quick view and recently viewed.** These loaded a
+  500px image into areas wider than half of it, so they looked soft or blurry on
+  high-resolution screens. They now load a size that matches how wide they are drawn.
+- **Full-screen photo viewer fills the screen.** A product photo smaller than the screen was
+  shown at its own size in the middle of the viewer. It is now enlarged to fit; zoom is
+  offered only when the photo has more detail than the fitted view shows, and a click beside
+  the photo still closes the viewer.
+
 ## 1.1.41 — 29 October 2026
 
 No Theme Editor setting was added, removed or renamed.
