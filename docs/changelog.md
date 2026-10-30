@@ -1,5 +1,20 @@
 # Release Notes
 
+## 1.1.43 — 30 October 2026
+
+### New
+
+- **Size guide.** A "Size guide" link now sits beside the size option on the product page
+  and in quick view, and opens a web page with your size chart in a pop-up. See
+  [Size Guide](usage/size-guide.md) for the setup.
+- **Colour photo before the size.** Choosing a colour swatch now shows that colour's photo
+  straight away, before a size is picked.
+
+### Fixes
+
+- **Colour dots on product cards.** Product cards now show the colour swatches a product
+  comes in (up to five). They never appeared before.
+
 ## 1.1.42 — 30 October 2026
 
 No Theme Editor setting was added, removed or renamed.
