@@ -1,5 +1,20 @@
 # Release Notes
 
+## 1.1.46 — 31 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Colour dots on product cards load from one request.** The dots now come from
+  BigCommerce's Storefront GraphQL API, one request for a batch of cards, instead of one
+  request per card.
+- **Numbered lists in descriptions keep their numbers.** An ordered list in a product
+  description showed checkmarks instead of 1. 2. 3.; it is numbered again, and a quote
+  gets a quote style.
+- **Quick payment buttons default.** The theme's default settings include "Show quick
+  payment buttons" again (on).
+
 ## 1.1.45 — 31 October 2026
 
 No Theme Editor setting was added, removed or renamed.
