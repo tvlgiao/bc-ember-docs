@@ -1,5 +1,21 @@
 # Release Notes
 
+## 1.1.45 — 31 October 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **No shipping promises on downloadable products.** A digital product's page no longer
+  says "Shipping calculated at checkout" or shows the free-shipping bar and the shipping
+  trust line: nothing ships for it.
+- **Cart with only downloads or gift certificates.** The cart page and cart sheet no longer
+  show the free-shipping bar, the free-shipping tile or a Shipping row when nothing in the
+  cart ships. Carts with physical products are unchanged.
+- **"Calculated at checkout" said once.** On a product page that already shows "Shipping:
+  Calculated at Checkout" under the title, the same line no longer repeats above Add to
+  Cart.
+
 ## 1.1.44 — 30 October 2026
 
 No Theme Editor setting was added, removed or renamed.
