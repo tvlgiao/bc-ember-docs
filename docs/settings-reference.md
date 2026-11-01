@@ -248,7 +248,7 @@ With Your text below, an empty field hides it. Button link: a path on this store
 | Setting | ID | Type |
 | --- | --- | --- |
 | Body text font family | `body-font` | font |
-| Body text font size | `fontSize-root` | select: 12px, 13px, 14px, 16px, 18px |
+| Body text font size | `fontSize-root` | select: 16px, 18px |
 | Body text color | `color-textBase` | color |
 | Body text hover color | `color-textBase--hover` | color |
 | Secondary text color | `color-textSecondary` | color |
@@ -266,8 +266,8 @@ With Your text below, an empty field hides it. Button link: a path on this store
 | Heading 2 | `fontSize-h2` | select: 21px, 23px, 25px, 29px, 33px, 32px, 38px |
 | Heading 3 | `fontSize-h3` | select: 18px, 20px, 22px, 26px, 30px |
 | Heading 4 | `fontSize-h4` | select: 16px, 18px, 20px, 24px, 28px |
-| Heading 5 | `fontSize-h5` | select: 11px, 13px, 15px, 19px, 23px, 16px |
-| Heading 6 | `fontSize-h6` | select: 9px, 11px, 13px, 17px, 21px, 14px |
+| Heading 5 | `fontSize-h5` | select: 13px, 15px, 19px, 23px, 16px |
+| Heading 6 | `fontSize-h6` | select: 13px, 17px, 21px, 14px |
 | Heading text color | `color-textHeading` | color |
 
 ### Loading indicators

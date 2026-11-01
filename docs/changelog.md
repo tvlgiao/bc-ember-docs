@@ -1,5 +1,41 @@
 # Release Notes
 
+## 1.1.48 — 1 November 2026
+
+Theme Editor settings changed: font size options that put text under 12px are removed. In
+**Theme Editor > Global**, **Body text font size** no longer offers 12px, 13px or 14px
+(16px and up remain), **Heading 5** no longer offers 11px, and **Heading 6** no longer
+offers 9px or 11px. Every default and every style's own value is still offered. No setting
+was added or renamed.
+
+### Fixes
+
+- **Free shipping in the cart's currency.** The free-shipping progress in the cart sheet,
+  the cart page and the product page now compares the cart total in the cart's own
+  currency. A cart started in one currency no longer shows "You've unlocked free
+  shipping!" or a FREE shipping row after the shopper switches to another currency. When
+  the theme does not know the exchange rate for the cart's currency, it makes no
+  free-shipping claim. The "Free shipping over" sentences in the header, footer and cart
+  sheet still show the selected currency.
+- **Product page purchase row below 320px.** On a very narrow screen (a phone zoomed to
+  200%), the quantity stepper takes its own row and Add to Cart sits below it at full
+  width, so the button no longer runs past the screen edge.
+- **Stars and product photos below 320px.** On a very narrow screen, the star rating on a
+  product card shrinks to fit the card, and the main product photo fits its column, so the
+  Fashion home page and product page no longer scroll sideways on a zoomed-in phone.
+- **Pre-order cards when options can't be checked.** "Pre-Order Now" on a product card adds
+  straight to the cart only when the theme is sure the product has no required options. If
+  it can't tell (for example, a product with many options), the button opens the product
+  page and the theme checks again later instead of remembering a guess.
+- **Size guide.** The size guide stops watching "Size guide" links that have left the page
+  (after Quick View closes or options re-render). Escape pressed in the guide or on its
+  link still closes only the guide, so Quick View stays open behind it; Escape pressed
+  anywhere else reaches that part of the page again.
+- **Lookbook hotspots close together.** A tap on a lookbook marker opens the marker nearest
+  the tap, so a tap on the edge of one marker no longer opens its neighbour.
+- **Journal images on tablets.** On screens 601–767px wide, journal cards shown two across
+  download an image the size they are drawn, not one twice as large.
+
 ## 1.1.47 — 1 November 2026
 
 No Theme Editor setting was added, removed or renamed.
