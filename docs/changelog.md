@@ -1,5 +1,31 @@
 # Release Notes
 
+## 1.1.47 — 1 November 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Search shows matching categories and brands again.** The search results page lists
+  the categories and brands whose names match the search, above the products. A category
+  shows its full path (for example "Women / Dresses").
+- **List-view descriptions keep their items apart.** In list view, a product's short
+  description no longer runs bullet points together; items are separated by " · ".
+- **Pre-order cards with options open the product page.** "Pre-Order Now" on a product
+  card no longer bounces back with "Please choose an option" when the product has
+  required options; it opens the product page.
+- **Mega menu on tablets.** On a touch screen or with a pen, the first tap on a menu item
+  opens its mega menu and the second follows the link. Tapping outside closes it.
+- **Shipping cost in the cart's currency.** On a product page, a fixed shipping cost is
+  shown in the cart's currency, with the matching symbol and amount, when the cart was
+  started in another currency. Free-shipping thresholds stay in the selected currency.
+- **Shipping quotes in the cart.** Each shipping option in the cart estimator sits on one
+  row (radio, name, price), with space under the Apply button.
+- **"1 brand".** The brands page says "1 brand", not "1 brands", when a letter filter
+  leaves one brand.
+- **Phones zoomed to 175–200%.** The home page photo stays above the headline and the logo
+  stays visible on a zoomed-in phone.
+
 ## 1.1.46 — 31 October 2026
 
 No Theme Editor setting was added, removed or renamed.
