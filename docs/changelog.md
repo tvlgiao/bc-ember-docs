@@ -1,5 +1,27 @@
 # Release Notes
 
+## 1.1.49 — 2 November 2026
+
+No Theme Editor setting was added, removed or renamed.
+
+### Fixes
+
+- **Buy Now below 320px.** On a very narrow screen (a phone zoomed to 200%), Buy Now on the
+  product page takes a full row, with the wishlist and compare buttons on the row under it,
+  in every style. On Home and Food it was squeezed beside those buttons and its label did
+  not fit.
+- **"Free shipping over" in the cart's currency.** When the cart is kept in another currency
+  than the one shown, the free-shipping sentences in the top bar, the footer and the cart
+  sheet state the amount in the cart's currency, matching the free-shipping progress (since
+  1.1.48). While the rate for the cart's currency is unknown, the sentence is hidden; it
+  comes back once the rate is known. Stores with one currency, and carts in the shown
+  currency, are unchanged.
+- **Journal images sharp at every width.** The journal page now asks for an image as wide
+  as the photo is drawn inside its cropped frame, which is often wider than the frame
+  itself. This replaces the 601–767px change in 1.1.48, which could load an image smaller
+  than drawn there. The large first post also offers a 1600px-wide image for
+  high-resolution screens; it only helps where the original photo is larger than 1280px.
+
 ## 1.1.48 — 1 November 2026
 
 Theme Editor settings changed: font size options that put text under 12px are removed. In
